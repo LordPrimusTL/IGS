@@ -42,10 +42,16 @@ Route::group(['prefix' => '/activity/', 'middleware' => ['auth','AllAuth']], fun
    });
 
     //Student
-    Route::get('student','ActivityController@ViewStudent')->name('viewStudent');
+    Route::get('student/view','ActivityController@ViewStudent')->name('viewStudent');
+    Route::get('student/action/{token}','ActivityController@ActionStudent')->name('studentAction');
+    Route::get('student/action/edit/{id}','ActivityController@ActionStudentEdit')->name('studentActionEdit');
+    Route::get('student/action/delete/{id}','ActivityController@ActionStudentDelete')->name('studentActionDelete');
+    Route::post('student/add','ActivityController@SaveStudent')->name('saveStudent');
 
 
 
-    //Payment
+    //Payment List
     Route::get('payment/list','ActivityController@PaymentList')->name('paymentList');
+    Route::post('payment/list/add','ActivityController@AddPaymentList')->name('addPayList');
+    Route::get('payment/list/delete/{token}','ActivityController@DeletePayList')->name('deletePayList');
 });

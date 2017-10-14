@@ -12,7 +12,8 @@
             @if(\Illuminate\Support\Facades\Auth::user()->role_id <= 2)
                 <li class="{{Request::is('activity/users') ? "active" : " "}}"> <a href="{{route('users')}}"><i class="fa fa-user-secret"></i>&nbsp;Users</a></li>
             @endif
-            <li class="{{Request::is('activity/payment/list') ? "active" : " "}}"> <a href="{{route('paymentList')}}"><i class="fa fa-credit-card"></i>&nbsp;List Of Payments</a></li>
+                <li class="{{Request::is('activity/student/view') ? "active" : " "}}"> <a href="{{route('viewStudent')}}"><i class="fa fa-user"></i>&nbsp;Students</a></li>
+                <li class="{{Request::is('activity/payment/list') ? "active" : " "}}"> <a href="{{route('paymentList')}}"><i class="fa fa-credit-card"></i>&nbsp;List Of Payments</a></li>
         </ul>
     </nav>
 @endif

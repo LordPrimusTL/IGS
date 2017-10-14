@@ -56,6 +56,7 @@ class AccountController extends Controller
 
     public function Logout()
     {
+        Session::flash('success','You Have Successfully Logged Out.');
         Auth::logout();
         return redirect()->action('AccountController@Login');
     }
