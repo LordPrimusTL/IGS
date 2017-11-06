@@ -22,9 +22,18 @@ class AuthCheck
         return false;
     }
 
+    public  static  function SuperAdmin()
+    {
+        if(Auth::check() && Auth::user()->role_id == 1 && Auth::user()->access)
+        {
+            return true;
+        }
+        return false;
+    }
+
     public static function Admin()
     {
-        if(Auth::check() && Auth::user()->role_id < 2 && Auth::user()->access)
+        if(Auth::check() && Auth::user()->role_id < 3 && Auth::user()->access)
         {
             return true;
         }

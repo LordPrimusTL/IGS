@@ -20,12 +20,15 @@ Route::get('/clear', function()
 {
     Artisan::call('cache:clear');
     Artisan::call('config:cache');
+    phpinfo();
     dd("Cleared!");
 });
 Route::get('/test',function(){
    dd(\App\Role::all());
 });
 
+//Route::get('excel','ActivityController@ExcelTest')->name('excel');
+Route::get('excel','ActivityController@ExcelTest')->name('excel');
 
 
 Route::group(['prefix' => '/activity/', 'middleware' => ['auth','AllAuth']], function ()
@@ -43,15 +46,34 @@ Route::group(['prefix' => '/activity/', 'middleware' => ['auth','AllAuth']], fun
 
     //Student
     Route::get('student/view','ActivityController@ViewStudent')->name('viewStudent');
+    Route::get('student/view/{token}','ActivityController@ViewStudentID')->name('viewStudentID');
     Route::get('student/action/{token}','ActivityController@ActionStudent')->name('studentAction');
     Route::get('student/action/edit/{id}','ActivityController@ActionStudentEdit')->name('studentActionEdit');
     Route::get('student/action/delete/{id}','ActivityController@ActionStudentDelete')->name('studentActionDelete');
     Route::post('student/add','ActivityController@SaveStudent')->name('saveStudent');
+    Route::post('student/search', 'ActivityController@searchStudent')->name('searchStudent');
 
-
+    //Class
+    Route::get('/class/view','ActivityController@ViewClass')->name('viewClass');
+    Route::get('/class/action/{token}','ActivityController@ClassAction')->name('classAction');
+    Route::post('/class/add','ActivityController@ClassAdd')->name('addClass');
 
     //Payment List
     Route::get('payment/list','ActivityController@PaymentList')->name('paymentList');
     Route::post('payment/list/add','ActivityController@AddPaymentList')->name('addPayList');
     Route::get('payment/list/delete/{token}','ActivityController@DeletePayList')->name('deletePayList');
+
+
+
+    //Session
+    Route::get('session/view','ActivityController@Sess')->name('viewSession');
+    Route::post('session/add','ActivityController@SessAdd')->name('addSession');
+
+
+    //Payment
+    Route::get('payment/view/{col}/{val}','ActivityController@ViewPaymentCol')->name('viewPaymentID');
+    Route::get('payment/view','ActivityController@ViewPayment')->name('viewPayment');
+    Route::get('payment/action/{token}','ActivityController@PaymentAction')->name('payAction');
+    Route::post('payment/save','ActivityController@PaymentSave')->name('savePayment');
+    Route::post('payment/search','ActivityController@PaymentSearch')->name('searchPayment');
 });

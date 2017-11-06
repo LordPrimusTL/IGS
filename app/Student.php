@@ -17,4 +17,5 @@ class Student extends Model
         return $this->belongsTo(StudStatus::class,'s_id');
     }
 
+
 }
