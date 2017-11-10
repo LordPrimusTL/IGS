@@ -14,6 +14,7 @@ use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
@@ -130,24 +131,35 @@ class ActivityController extends Controller
 
     //Student
     public function ViewStudent(){
-        return view('Activity.Student.View',['title' => 'Students','stud' =>  Student::orderByDesc('created_at')->get()]);
+        return view('Activity.Student.View',['title' => 'Students','stud' =>  Student::orderByDesc('created_at')->paginate(100), 'key' => null,'s' => "data"]);
     }
     public function ViewStudentID($token){
         //dd(Student::find(decrypt($token)));
-        return view('Activity.Student.View',['title' => 'Students','stud' =>  Student::where('id' ,decrypt($token))->get()]);
+        return view('Activity.Student.View',['title' => 'Students','stud' =>  Student::where('id' ,decrypt($token))->get(),'key' => null,'s' => null]);
     }
     public function ActionStudent($token)
     {
         $action = decrypt($token);
         if($action === 1)
         {
-            return view('Activity.Student.Add',['title' => 'Add Student', 'type' => 1,'stud' => null]);
+            return view('Activity.Student.Add',['title' => 'Add Student', 'type' => 1,'adm_id' => 1,'stud' => null,'key' => null,'s' => null]);
         }
+
+    }
+    public function ActionStudentAdd($token)
+    {
+        $action = decrypt($token);
+        //dd($action);
+        if($action != null && $token != null)
+        {
+            return view('Activity.Payment.Add',['title' => 'Add Payment', 'pay' =>  null,'type' => 1,'adm_id' => $action]);
+        }
+        return redirect()->back();
 
     }
     public function ActionStudentEdit($id)
     {
-        return view('Activity.Student.Add',['title' => 'Add Student', 'type' => 2,'stud' => Student::find(decrypt($id))]);
+        return view('Activity.Student.Add',['title' => 'Add Student', 'type' => 2,'stud' => Student::find(decrypt($id)),'key' => null,'s' => null]);
     }
     public function ActionStudentDelete($id)
     {
@@ -200,11 +212,13 @@ class ActivityController extends Controller
             $stud->dob = $request->dob;
             $stud->adm_id = $request->adm_id;
             $stud->s_id = $request->status;
+            $stud->parent_phone_number = $request->parent_phone_number;
+            //dd($stud);
             $stud->save();
             $request->type == 1 ? $action = 'Added' : $action = 'Edited';
             Session::flash('success','Student ' . $action. ' Successfully');
             $this->getLogger()->LogInfo('Student Has Been ' . $action,['stud' => $stud,'by' => Auth::id()]);
-            return redirect()->action('ActivityController@ViewStudent');
+            return view('Activity.Student.View',['title' => 'Students','stud' =>  Student::where('id',$stud->id)->get(), 'key' => $stud->adm_id]);
         }
         catch (\Exception $ex)
         {
@@ -228,12 +242,8 @@ class ActivityController extends Controller
                 ->orwhere('dob','LIKE','%'.$k.'%');
                 if($s != null)
                     $query->orwhere('s_id','LIKE','%'. ($s != null ? $s->id : '')  . '%');
-
-
-            //dd($query, $query->get());
-            return view('Activity.Student.View',['title' => 'Students','stud' =>  $query->get()]);
-
-            //dd($query, $query->get());
+            //dd($request->all(), $query->get());
+            return view('Activity.Student.View',['title' => 'Students','stud' =>  $query->get(), 'key' => $k,'s' => true]);
         }
         return redirect()->back();
     }
@@ -354,8 +364,6 @@ class ActivityController extends Controller
     }
     public function ViewPaymentCol($col,$val)
     {
-        //dd(decrypt($token));
-        //dd($col,$val);
         return view('Activity.Payment.Payment',['title' => 'Payment', 'pay' => Payment::where(decrypt($col),'=', decrypt($val))->get(),'key'=>null]);
     }
 
@@ -364,7 +372,7 @@ class ActivityController extends Controller
     {
         if(decrypt($token) == 1)
         {
-            return view('Activity.Payment.Add',['title' => 'Add Payment', 'pay' =>  null,'type' => 1]);
+            return view('Activity.Payment.Add',['title' => 'Add Payment', 'pay' =>  null,'type' => 1,'adm_id' => null]);
         }
     }
 
@@ -410,8 +418,9 @@ class ActivityController extends Controller
         $pay->c_id = $request->c_id;
         $pay->pl_id = $request->pl;
         $pay->amount = $request->amount;
+        $pay->date_of_payment = $request->date_of_payment;
         try{
-            //dd($pay, $action, $request->all());
+            //dd($pay, $action);
             $pay->save();
             Session::flash('success','Payment ' . $action . ' Successfully.');
             $this->getLogger()->LogInfo('Payment added successfuly',['pay' => $pay,'by' => Auth::id(),'oldPay' => $old_p]);
@@ -448,7 +457,7 @@ class ActivityController extends Controller
             }if(2 < $c && $a[2] != null)
             {
                 $ss = SchoolSession::where('session','LIKE','%' . $a[2] . '%')->first();
-                $p->orWhere('sess_id','LIKE' ,'%' . $ss->id . '%');
+                $p->Where('sess_id','LIKE' ,'%' . $ss->id . '%');
 
                 //dd($p->get());
                 //$s $p->where('sess_id','LIKE' ,'%' . $a[2] . '%');
@@ -494,22 +503,66 @@ class ActivityController extends Controller
     public function ExcelTest()
     {
         //$n = new Excel();
-        $class = 16;
-        $sess = 2;
-        $term = 1;
-
+        $chk = false;
+        $class = 16;//Class
+        $sess = 2;//Session - First Part
+        $term = 1;//Term - First
+        $classname = SchoolClass::find($class)->class;
+        $sessname = SchoolSession::find(2)->session;
         $data = Payment::query();
-        $p = $data->where(['c_id' =>  $class, 'sess_id' => $sess, 'term_id' => $term])->get();
+        $data->where(['c_id' =>  $class, 'sess_id' => $sess, 'term_id' => $term]);
+        $p = $data->orderBy('stud_id','DESC')->get();
         //$ll = $data->where
         $list = PaymentList::all();
-        $stud = [];
-        foreach ($data as $da)
+        $ids = []; $ex = [];
+        $i = 1;
+        //$exx = [1,2,3,4,5,6,7,8,9];
+        //Get All Student Ids
+        foreach ($p->all() as $d)
         {
-            $a = [];
-        }
-        dd($p->all(), $list);
+            if(empty($ids))
+            {
+                array_push($ids,$d->stud_id);
+                //array_push($ex, $d->stud_id);
+            }
+            else{
+                foreach ($ids as $id)
+                {
+                    if($d->stud_id === $id)
+                    {
+                        $chk = true;
+                        break;
+                    }
+                }
+                if(!$chk)
+                {
+                    array_push($ids, $d->stud_id);
+                    //var_dump($ids);
+                }
+            }
 
-        Excel::create("$class - $sess", function($excel)
+        }
+        $ids = array_reverse($ids);
+        $studData = [];
+        //Get All Student Data
+        if(!empty($ids))
+        {
+            //dd($ids);
+            foreach($ids as $id)
+            {
+                $studPay = Payment::where(['c_id' =>  $class, 'sess_id' => $sess, 'term_id' => $term,'stud_id' => $id])->get();
+                print_r($id);
+                //$studPay = $d->where('stud_id','=',$id)->get();
+                array_push($studData, [Student::find($id)->fullname => $studPay->toArray()]);
+            }
+            //dd($studData);
+
+        }
+       // for($i = 0; $i < count($ids);$i++)
+
+        //dd("stop");
+
+        Excel::create("$classname - $sessname", function($excel)
         {
             $excel->setTitle('Dat Dat Data');
             $excel->sheet('Users', function($sheet) {
@@ -520,23 +573,17 @@ class ActivityController extends Controller
                     {
                         $a = ['ID' => $us->id, 'Email' => $us->email, 'Password' => $us->password, 'Role' => $us->role->role ,'Access' => $us->access];
                         array_push($arr, $a);
-
                     }
                 }
-                //dd($arr);
-
                 $sheet->setTitle('My Excel File')->setStyle(['font' => ['name' => 'Andale Mono']]);
+                //dd($arr);
                 $sheet->fromArray($arr);
                 /*$sheet->fromArray(array(
                     array('data1', 'data2'),
                     array('data3', 'data4')
                 ));*/
             });
-
-        })->export('xls');
-
-        dd('doqnloaded');
-
+        })->export('xlsx');
         //->download('xls')
     }
 
@@ -579,5 +626,133 @@ class ActivityController extends Controller
        {
            dd($ex);
        }
+    }
+
+    public function ddJson(Request $request)
+    {
+        $checkLogin = file_get_contents(storage_path() . "/students.json"); // ie: /var/www/laravel/app/storage/json/filename.json
+        for ($i = 0; $i <= 31; ++$i) {
+            $checkLogin = str_replace(chr($i), "", $checkLogin);
+        }
+        $checkLogin = str_replace(chr(127), "", $checkLogin);
+
+        // This is the most common part
+        // Some file begins with 'efbbbf' to mark the beginning of the file. (binary level)
+        // here we detect it and we remove it, basically it's the first 3 characters
+        if (0 === strpos(bin2hex($checkLogin), 'efbbbf')) {
+            $checkLogin = substr($checkLogin, 3);
+        }
+
+        //$checkLogin = json_decode( $checkLogin );
+        //print_r($checkLogin);
+        $json = json_decode($checkLogin, true);
+        $err = [];
+        dd(count($json));
+        for($i = 3; $i < count($json); $i++)
+        {
+            $data = $json[$i];
+            try{
+                $stud = null;
+                $stud = new Student();
+                $stud->adm_id = $data['FIELD1'] == null ? "No Adm Id": 'S-' . $data["FIELD1"];
+                $stud->fullname = ucwords(strtolower($data["FIELD2"]));
+                //$stud->dob = $data[2] == null ? null : Carbon::parse($data[2]);
+                try{
+                    $stud->dob = $data["FIELD3"] == null ? null : Carbon::createFromFormat('d/m/Y',$data["FIELD3"]);
+                }
+                catch (\Exception $ex)
+                {
+                    array_push($err, $data);
+                }
+                $stud->gender = $data["FIELD4"] == "M" ? "Male" : "Female";
+                $stud->parent_phone_number = $data["FIELD5"];
+
+                //dd($stud);
+                $stud->save();
+            }catch (\Exception $ex)
+            {
+                return response()->json($ex->getMessage());
+            }
+        }
+        dd($err);
+        //dd($json, json_last_error_msg());
+        return response()->json([count($json),$json]);
+
+
+    }
+    public function ddE(Request $request)
+    {
+        if($request->hasFile('file'))
+        {
+            $data = Excel::load($request->file('file')->getRealPath(), function ($reader){})->get();
+            $array = [];
+            /*foreach ($data as $key => $value) {
+                $arr = ['name' => $value, 'details' => $value->details];
+                array_push($array,$arr);
+            }*/
+
+            Excel::load($request->file('file')->getRealPath(), function($reader) use (&$excel) {
+                $objExcel = $reader->getExcel();
+                $sheet = $objExcel->getSheet(0);
+                $highestRow = $sheet->getHighestRow();
+                $highestColumn = $sheet->getHighestColumn();
+
+                //  Loop through each row of the worksheet in turn
+                for ($row = 2; $row <= $highestRow; $row++)
+                {
+                    //  Read a row of data into an array
+                    //var_dump($row);
+                    $rowData = $sheet->rangeToArray('A' . $row . ':' . $highestColumn . $row,
+                        NULL, TRUE, FALSE);
+
+
+                    $data = $rowData[0];
+                    //var_dump($data);
+                    try{
+                        $stud = null;
+                        $stud = new Student();
+                        $stud->adm_id = $data[0] == null ? "No Adm Id": "P - $data[0]";
+                        $stud->fullname = ucwords(strtolower($data[1]));
+                        //$stud->dob = $data[2] == null ? null : Carbon::parse($data[2]);
+                        try{
+                            $stud->dob = $data[2] == null ? null : Carbon::createFromFormat('dd/mm/yyyy',$data[2]);
+                        }
+                        catch (\Exception $ex)
+                        {
+                            var_dump($ex->getMessage(), $data);
+                            try{
+                                $stud->dob = $data[2] == null ? null : Carbon::createFromFormat('dd/mm/yyyy',$data[2]);
+                            }catch (\Exception $ex)
+                            {
+
+                                var_dump($ex->getMessage());
+                            }
+                        }
+                        $stud->gender = $data[3] === "M" ? "Male" : "Female";
+                        $stud->parent_phone_number = $data[4];
+                        $stud->save();
+                        //var_dump($stud);
+                    }
+                    catch (\Exception $ex)
+                    {
+                        Log::info($ex,["Line" => $row]);
+                        //var_dump($stud, $data);
+                        dd('stop');
+                    }
+
+
+
+                    $excel[] = $rowData[0];
+                }
+            });
+
+
+            $res = $array;
+            //return response()->json($data);
+            //foreach ($)
+            return response()->json($excel);
+        }
+        //Excel::load(file_get_contents(storage_path('file.xls')), function ($reader){})->dd();
+        //dd($file);
     }
 }

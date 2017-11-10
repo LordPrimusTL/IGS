@@ -14,7 +14,7 @@
                             </div>
                             <div class="col-10">
                                 @include('Partials._message')
-                                <form method="post" action="{{route('loginPost')}}">
+                                <form method="post" action="{{route('loginPost')}}" class="myForm">
                                     {{csrf_field()}}
                                     <label for="email">Email Address: </label>
                                     <div class="form-group">

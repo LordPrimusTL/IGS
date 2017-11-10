@@ -24,7 +24,7 @@
                         @endif
                         <label for="adm_id"> Admission ID: </label>
                         <div class="form-group">
-                            <input class="form-control" type="number" required name="adm_id" id="adm_id" placeholder="Admission ID" value="{{$stud != null ? $stud->adm_id : ""}}"/>
+                            <input class="form-control" type="text" required name="adm_id" id="adm_id" placeholder="Admission ID" value="{{$stud != null ? $stud->adm_id : ""}}"/>
                         </div>
                         <label for="fullname"> Full Name: </label>
                         <div class="form-group">
@@ -41,6 +41,10 @@
                         <div class="form-group">
                             <input type="text" class="form-control" name="dob" id="dob" placeholder="DD/MM/YYYY" value="{{$stud != null ? $stud->dob : ""}}"/>
                         </div>
+                        <label for="parent_phone_number">Parent Phone Number: </label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="parent_phone_number" id="parent_phone_number" placeholder="Parent Phone Number" value="{{$stud != null ? $stud->parent_phone_number : ""}}"/>
+                        </div>
 
                         <label class="form-control-label" for="status">Status: </label>
                         <div class="form-group">
@@ -48,7 +52,7 @@
                                 <option value="">Select Status</option>
                                 <?php $s = \App\StudStatus::all()?>
                                 @foreach($s as $e)
-                                    <option {{$stud != null ? $stud->s_id == $e->id ? 'selected' : '' : ""}} value="{{$e->id}}">{{$e->name}}</option>
+                                    <option {{$stud != null ? $stud->s_id == $e->id ? 'selected disabled' : '' : ""}} value="{{$e->id}}">{{$e->name}}</option>
                                 @endforeach
                             </select>
                         </div>

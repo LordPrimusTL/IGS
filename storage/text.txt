@@ -1,0 +1,12 @@
+$stud->adm_id = $data['FIELD1'] == null ? "No Adm Id": 'S-' . $data["FIELD1"];
+                $stud->fullname = ucwords(strtolower($data["FIELD2"]));
+                //$stud->dob = $data[2] == null ? null : Carbon::parse($data[2]);
+                try{
+                    $stud->dob = $data["FIELD3"] == null ? null : Carbon::createFromFormat('d/m/Y',$data["FIELD3"]);
+                }
+                catch (\Exception $ex)
+                {
+                    array_push($err, $data);
+                }
+                $stud->gender = $data["FIELD4"] == "M" ? "Male" : "Female";
+                $stud->parent_phone_number = $data["FIELD5"];

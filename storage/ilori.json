@@ -1,0 +1,4063 @@
+﻿[
+ {
+   "FIELD1": "A",
+   "FIELD2": "B",
+   "FIELD3": "C",
+   "FIELD4": "D",
+   "FIELD5": "E"
+ },
+ {
+   "FIELD1": "ADM. NO.",
+   "FIELD2": "NAMES",
+   "FIELD3": "DATE OF BIRTH",
+   "FIELD4": "SEX",
+   "FIELD5": "PARENT PHONE NO."
+ },
+ {
+   "FIELD1": "003424",
+   "FIELD2": "ADEGOKE MARVELOUS",
+   "FIELD3": "",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003425",
+   "FIELD2": "ADEMOYEGUN IDRIS",
+   "FIELD3": "24/09/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003426",
+   "FIELD2": "ADENIRAN AFEEZ ",
+   "FIELD3": "17/08/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003427",
+   "FIELD2": "ALABI DAVID",
+   "FIELD3": "25/08/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003428",
+   "FIELD2": "ARCHBONG VICTOR",
+   "FIELD3": "17/12/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003429",
+   "FIELD2": "DARE EMMANUEL ",
+   "FIELD3": "28/12/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003430",
+   "FIELD2": "DARE MATTHEW",
+   "FIELD3": "24/11/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003431",
+   "FIELD2": "FALADE OBAFEMI ",
+   "FIELD3": "20/06/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003432",
+   "FIELD2": "JELILI FAROUQ",
+   "FIELD3": "05/03/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003433",
+   "FIELD2": "NURUDEEN WASIU ",
+   "FIELD3": "07/03/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003434",
+   "FIELD2": "OGUNSHOLA IBRAHEEM ",
+   "FIELD3": "",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003435",
+   "FIELD2": "OJO-IBUKUN EMMANUEL",
+   "FIELD3": "23/09/2007",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003436",
+   "FIELD2": "OLANIYAN MICHAEL",
+   "FIELD3": "15/07/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003437",
+   "FIELD2": "OLAYINKA MARVELOUS",
+   "FIELD3": "13/06/2007",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003438",
+   "FIELD2": "OWOEYE TIMILEYIN",
+   "FIELD3": "19/04/2008",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003439",
+   "FIELD2": "TUNDE ALAO TOKI",
+   "FIELD3": "11/10/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003440",
+   "FIELD2": "YUSUFF WARIS",
+   "FIELD3": "11/9/2007",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003473",
+   "FIELD2": "ABOLAJI KEHIMDE ",
+   "FIELD3": "09/09/2007",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003474",
+   "FIELD2": " ADEJARE DAMILOLA",
+   "FIELD3": "28/08/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003475",
+   "FIELD2": "ADETAYO GLORY",
+   "FIELD3": "03/06/2008",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003476",
+   "FIELD2": "AFOLABI ENIOLA",
+   "FIELD3": "19/04/2007",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003477",
+   "FIELD2": "AJAGUN JOY",
+   "FIELD3": "06/03/2008",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003478",
+   "FIELD2": "AKANFE ODUNAYO",
+   "FIELD3": "19/12/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003479",
+   "FIELD2": "AKINLEYE QUARIBAT",
+   "FIELD3": "16/04/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003480",
+   "FIELD2": "ALADE FATHIA",
+   "FIELD3": "14/07/2008",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003481",
+   "FIELD2": "AYOADE AYISAT",
+   "FIELD3": "28/02/2007",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003482",
+   "FIELD2": "HAMED OPEYEMI",
+   "FIELD3": "24/06/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003483",
+   "FIELD2": "LAWAL IFEOLUWA",
+   "FIELD3": "27/03/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003484",
+   "FIELD2": "OGUNSANYA KEMI",
+   "FIELD3": "09/03/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003485",
+   "FIELD2": "OLADAPO ALIYAT",
+   "FIELD3": "19/07/2007",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003486",
+   "FIELD2": "OYEDOTUN OYEFUNKE",
+   "FIELD3": "18/04/2008",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003487",
+   "FIELD2": "POPOOLA MUMINAT",
+   "FIELD3": "06/06/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "",
+   "FIELD2": "",
+   "FIELD3": "",
+   "FIELD4": "",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003441",
+   "FIELD2": "ABDULHAKEEN IBRAHIM",
+   "FIELD3": "24/01/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003442",
+   "FIELD2": "ADEBISI ISAAC",
+   "FIELD3": "05/04/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003443",
+   "FIELD2": "ADELEKE RIDWAN",
+   "FIELD3": "05/02/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003444",
+   "FIELD2": "ADISA ELISHA",
+   "FIELD3": "19/09/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003445",
+   "FIELD2": "AKANFE FELIX",
+   "FIELD3": "25/02/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003446",
+   "FIELD2": "AKINOLA MAYOKUN",
+   "FIELD3": "26/08/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003447",
+   "FIELD2": "OGUNTUNDE RIDWAN",
+   "FIELD3": "25/12/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003448",
+   "FIELD2": "OLAIYA OLALEKAN",
+   "FIELD3": "25/10/2008",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003449",
+   "FIELD2": "OLALEKAN EMMANUEL",
+   "FIELD3": "28/02/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003450",
+   "FIELD2": "OMOWONUOLA ENIOLA",
+   "FIELD3": "28/06/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003451",
+   "FIELD2": "ONUKWUBE JOHN PAUL",
+   "FIELD3": "21/11/2007",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003452",
+   "FIELD2": "OWOLABI JOHN ",
+   "FIELD3": "26/06/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003453",
+   "FIELD2": "OYETORO VICTOR",
+   "FIELD3": "06/08/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003454",
+   "FIELD2": "SHUAIB SHERIFF",
+   "FIELD3": "10/07/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003455",
+   "FIELD2": "TAIWO DANIEL",
+   "FIELD3": "25/05/2008",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003456",
+   "FIELD2": "YUSUFF ABDULRASHEED",
+   "FIELD3": "19/06/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003488",
+   "FIELD2": "ABOLAJI TAIWO",
+   "FIELD3": "09/09/2007",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003489",
+   "FIELD2": "ADEEYO ESTHER",
+   "FIELD3": "27/04/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003490",
+   "FIELD2": "ADEGOKE CHRISTANA ",
+   "FIELD3": "08/05/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003491",
+   "FIELD2": "ADEYEMI RONKE",
+   "FIELD3": "15/06/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003492",
+   "FIELD2": "ADISA ENIOLA ",
+   "FIELD3": "14/05/2007",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003493",
+   "FIELD2": "AJIBADE RACHAEL",
+   "FIELD3": "02/09/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003494",
+   "FIELD2": "ALIMI AMINAT ",
+   "FIELD3": "06/06/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003495",
+   "FIELD2": "LAWAL ADESHEWA",
+   "FIELD3": "04/01/2007",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003496",
+   "FIELD2": "MOSHOOD MEDINAT ",
+   "FIELD3": "21/07/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003497",
+   "FIELD2": "OGUNMOLA EUNICE ",
+   "FIELD3": "03/03/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003498",
+   "FIELD2": "OLAYEMI ESTHER",
+   "FIELD3": "21/03/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003499",
+   "FIELD2": "ONIFADE ADENIKE",
+   "FIELD3": "14/04/2007",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003500",
+   "FIELD2": "ORIMADEGUN FAISAT",
+   "FIELD3": "28/12/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003501",
+   "FIELD2": "OYELAHAN MAVELOUS",
+   "FIELD3": "03/08/2007",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003502",
+   "FIELD2": "SULAIMON HABIBAT",
+   "FIELD3": "15/03/2007",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "",
+   "FIELD2": "",
+   "FIELD3": "",
+   "FIELD4": "",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003457",
+   "FIELD2": "ABIJO AYOMIDE",
+   "FIELD3": "",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003458",
+   "FIELD2": "ADEGBOYEGA SUNDAY",
+   "FIELD3": "09/07/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003459",
+   "FIELD2": "ADEDEJI AYOBAMI",
+   "FIELD3": "28/05/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003460",
+   "FIELD2": "ADEKOMI GIDEON",
+   "FIELD3": "28/02/2008",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003461",
+   "FIELD2": "ADEOSUN SEGUN",
+   "FIELD3": "15/08/2008",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003462",
+   "FIELD2": "AKINOLA AKINTUNDE",
+   "FIELD3": "01/02/2007",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003463",
+   "FIELD2": "AWOTAYO MICHAEL",
+   "FIELD3": "25/11/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003464",
+   "FIELD2": "BABALOLA IBRAHIM",
+   "FIELD3": "08/11/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003465",
+   "FIELD2": "FATADE AWOYINFA",
+   "FIELD3": "28/02/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003466",
+   "FIELD2": "LASORE FERANMI",
+   "FIELD3": "01/02/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003467",
+   "FIELD2": "IJELEYE ADEDAYO",
+   "FIELD3": "09/06/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003468",
+   "FIELD2": "OLABIYI VICTOR",
+   "FIELD3": "25/05/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003469",
+   "FIELD2": "OLAOYE ABDULLAHI",
+   "FIELD3": "18/11/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003470",
+   "FIELD2": "OMOBHUDE VICTOR",
+   "FIELD3": "10/02/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003471",
+   "FIELD2": "OYENIYI STEPHEN ",
+   "FIELD3": "12/05/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003472",
+   "FIELD2": "TEWOGBADE IBRAHIM",
+   "FIELD3": "13/03/2008",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003503",
+   "FIELD2": "ADESHINA SHEKINAT",
+   "FIELD3": "21/08/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003504",
+   "FIELD2": "ADESUNMIBOYE AMINAT",
+   "FIELD3": "06/11/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003505",
+   "FIELD2": "ADEWUYI ALILAT",
+   "FIELD3": "19/10/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003506",
+   "FIELD2": "AJALA DORCAS",
+   "FIELD3": "18/03/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003507",
+   "FIELD2": "FALOYE DEBORAH",
+   "FIELD3": "25/10/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003508",
+   "FIELD2": "MUIDEEN ALIYAT",
+   "FIELD3": "16/05/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003509",
+   "FIELD2": "OJEWALE ALIMAT",
+   "FIELD3": "26/06/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003510",
+   "FIELD2": "OKE BUNMI",
+   "FIELD3": "02/06/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003511",
+   "FIELD2": "OLASUNKANMI AISHAT",
+   "FIELD3": "",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003512",
+   "FIELD2": "OLAYIWOLA AMINAT ",
+   "FIELD3": "14/04/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003513",
+   "FIELD2": "OLUYOMI FAVOUR",
+   "FIELD3": "17/12/2007",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "",
+   "FIELD2": "",
+   "FIELD3": "",
+   "FIELD4": "",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003228",
+   "FIELD2": "ADESORIN ERIOLUWA",
+   "FIELD3": "06/06/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003231",
+   "FIELD2": "ALADETOHUN VICTOR",
+   "FIELD3": "04/10/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003261",
+   "FIELD2": "ADISA EMMANUEL ",
+   "FIELD3": "20/07/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003293",
+   "FIELD2": "ANWO MATTHEW",
+   "FIELD3": "04/04/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003290",
+   "FIELD2": "ADENIRAN OPEYEMI",
+   "FIELD3": "14/07/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003264",
+   "FIELD2": "ISIAQ USMAN",
+   "FIELD3": "05/04/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003235",
+   "FIELD2": "JIMOH MUBARAK ",
+   "FIELD3": "11/09/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003296",
+   "FIELD2": "KAYODE AGBAJE",
+   "FIELD3": "12/08/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003246",
+   "FIELD2": "OGUNJOBI FELIX",
+   "FIELD3": "11/11/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003294",
+   "FIELD2": "OLAPADE OLAMIDE",
+   "FIELD3": "28/11/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003238",
+   "FIELD2": "OYEBODE DAVID",
+   "FIELD3": "10/09/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003299",
+   "FIELD2": "SAMUEL FESTUS",
+   "FIELD3": "31/05/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003270",
+   "FIELD2": "SANNI FADILULAHI",
+   "FIELD3": "20/12/2016",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003271",
+   "FIELD2": "ADEBISI ESTHER",
+   "FIELD3": "25/04/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003241",
+   "FIELD2": "ADEKUNLE ABIOLA",
+   "FIELD3": "01/01/2008",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003274",
+   "FIELD2": "ADETONA FLORENCE",
+   "FIELD3": "25/04/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003406",
+   "FIELD2": "ADETOMIDE FATHIA",
+   "FIELD3": "12/06/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003244",
+   "FIELD2": "AKINWALE TAIWO ",
+   "FIELD3": "16/07/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003305",
+   "FIELD2": "AKINWALE EUNICE",
+   "FIELD3": "31/01/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003304",
+   "FIELD2": "AGBOOLA DABIRA ",
+   "FIELD3": "22/09/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003314",
+   "FIELD2": "ALABI BOLUWATIFE",
+   "FIELD3": "28/07/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003306",
+   "FIELD2": "ATINUKE PELUMI ",
+   "FIELD3": "19/07/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003308",
+   "FIELD2": "BAMIDELE MERCY",
+   "FIELD3": "29/10/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003407",
+   "FIELD2": "BANK-OLA SHARON",
+   "FIELD3": "08/06/2008",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003251",
+   "FIELD2": "NURUDEEN BASIRAT ",
+   "FIELD3": "22/06/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003283",
+   "FIELD2": "ODELOLA FAVOUR",
+   "FIELD3": "12/09/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003284",
+   "FIELD2": "OLAGUNJU TOYIN",
+   "FIELD3": "01/01/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003254",
+   "FIELD2": "OMOYAJOWO DEBORAH ",
+   "FIELD3": "24/06/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003315",
+   "FIELD2": "ONI NAFISAT",
+   "FIELD3": "21/04/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003285",
+   "FIELD2": "OLASUPO OYINLADE",
+   "FIELD3": "24/11/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003257",
+   "FIELD2": "TAIWO VERA",
+   "FIELD3": "1/11/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003289",
+   "FIELD2": "ADEKUNLE RIDWAN",
+   "FIELD3": "01/07/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003292",
+   "FIELD2": "AJIBOYE EMMANUEL",
+   "FIELD3": "31/07/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003299",
+   "FIELD2": "AJIBOYE SAMUEL",
+   "FIELD3": "02/11/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003262",
+   "FIELD2": "AKINTUNDE VICTOR",
+   "FIELD3": "01/05/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003297",
+   "FIELD2": "AYOFE JAFAR",
+   "FIELD3": "02/02/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003232",
+   "FIELD2": "AYOOLA ISAIAH",
+   "FIELD3": "14/12/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003265",
+   "FIELD2": "LAMIDI PRECIOUS",
+   "FIELD3": "26/03/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003268",
+   "FIELD2": "OJEREMI GOWIN",
+   "FIELD3": "08/12/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003236",
+   "FIELD2": "OLOYEDE NOAH",
+   "FIELD3": "11/08/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003298",
+   "FIELD2": "OMOLERE ADEDEJI ",
+   "FIELD3": "13/02/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003239",
+   "FIELD2": "OYOEYEMI SAMUEL",
+   "FIELD3": "06/04/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003240",
+   "FIELD2": "ADENIYI OYINDAMOLA ",
+   "FIELD3": "15/08/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003275",
+   "FIELD2": "ADETUTU DARASIMI",
+   "FIELD3": "01/07/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003300",
+   "FIELD2": "ABDULLAHI KEHINDE",
+   "FIELD3": "22/10/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003303",
+   "FIELD2": "ADEBOYE FAITH",
+   "FIELD3": "17/03/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003179",
+   "FIELD2": "ADEBAYO FARIDAT",
+   "FIELD3": "",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003404",
+   "FIELD2": "AJIBOLA FARIDAT",
+   "FIELD3": "03/04/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003353",
+   "FIELD2": "AKANDE ENIOLA",
+   "FIELD3": "26/02/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003245",
+   "FIELD2": "ALAYANDE ROIMOT",
+   "FIELD3": "25/03/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003278",
+   "FIELD2": "AZEEZ ROFIYAT",
+   "FIELD3": "28/08/2008",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003281",
+   "FIELD2": "FOYAKE ENIOLA",
+   "FIELD3": "22/09/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003249",
+   "FIELD2": "KOLADE CECILIA",
+   "FIELD3": "17/01/2008",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003313",
+   "FIELD2": "OGUNNIYI FATIMOH ",
+   "FIELD3": "24/04/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003152",
+   "FIELD2": "OJO OYINLADE",
+   "FIELD3": "01/11/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003286",
+   "FIELD2": "OLAYIWOLA IKIMOT",
+   "FIELD3": "",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003312",
+   "FIELD2": "ONADIPO BUSAYO",
+   "FIELD3": "01/12/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003255",
+   "FIELD2": "OSUNDINA KEMI",
+   "FIELD3": "01/06/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003252",
+   "FIELD2": "NURUDEEN SEMIYAT",
+   "FIELD3": "20/03/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "",
+   "FIELD2": "",
+   "FIELD3": "",
+   "FIELD4": "",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003402",
+   "FIELD2": "ADENIYI ABIOLA",
+   "FIELD3": "28/05/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003230",
+   "FIELD2": "AKINWALE KEHINDE",
+   "FIELD3": "16/07/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003291",
+   "FIELD2": "AJAYI CLEMENT ",
+   "FIELD3": "26/02/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003352",
+   "FIELD2": "AYODEJI PHILIP",
+   "FIELD3": "10/02/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003263",
+   "FIELD2": "ALABI SEGUN",
+   "FIELD3": "22/10/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003401",
+   "FIELD2": "AYOFE WAJUD",
+   "FIELD3": "05/06/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003233",
+   "FIELD2": "BUKOYE MUHAMMED ",
+   "FIELD3": "26/05/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003400",
+   "FIELD2": "JOSEPH TOBILOBA",
+   "FIELD3": "12/04/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003266",
+   "FIELD2": "MUSEFIU FAWAS",
+   "FIELD3": "13/11/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003399",
+   "FIELD2": "OLOWOFOYEKU BAYONLE",
+   "FIELD3": "26/12/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003296",
+   "FIELD2": "OLANREWAJU FAWAS ",
+   "FIELD3": "05/03/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003237",
+   "FIELD2": "ONI KAYODE",
+   "FIELD3": "21/06/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003269",
+   "FIELD2": "OYEYODE CLEMENT ",
+   "FIELD3": "16/02/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003297",
+   "FIELD2": "ORIMADEGUN IBRAHIM",
+   "FIELD3": "24/08/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003398",
+   "FIELD2": "SALAMI YUSSUF",
+   "FIELD3": "29/03/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003273",
+   "FIELD2": "ADELEYE ABISOLA",
+   "FIELD3": "27/02/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002343",
+   "FIELD2": "ADEREMI ENIOLA",
+   "FIELD3": "14/11/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003307",
+   "FIELD2": "AYODELE FAISHAT",
+   "FIELD3": "15/11/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003246",
+   "FIELD2": "BADMUS BUKOLA",
+   "FIELD3": "21/07/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003276",
+   "FIELD2": "AGBOOLA DARASIMI",
+   "FIELD3": "22/09/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003279",
+   "FIELD2": "EMMANUEL FERANMI",
+   "FIELD3": "25/11/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003247",
+   "FIELD2": "ISMAEEL KHADIJAT",
+   "FIELD3": "28/05/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003250",
+   "FIELD2": "LAWAL TIMILEHIN",
+   "FIELD3": "14/09/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003282",
+   "FIELD2": "MUIDEEN MARIAM",
+   "FIELD3": "12/07/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003311",
+   "FIELD2": "OLAPADE AISHAT",
+   "FIELD3": "07/12/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003253",
+   "FIELD2": "OKUNADE PRECIOUS",
+   "FIELD3": "20/02/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003314",
+   "FIELD2": " OLURINDE CHRISTANA",
+   "FIELD3": "",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003287",
+   "FIELD2": "OPARINDE ENIOLA ",
+   "FIELD3": "13/11/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003256",
+   "FIELD2": "OYEYEMI FAITH",
+   "FIELD3": "25/07/2007",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003316",
+   "FIELD2": "OYENIYI PRAISE ",
+   "FIELD3": "20/07/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003403",
+   "FIELD2": "OYEYEMI EUNICE",
+   "FIELD3": "06/04/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003317",
+   "FIELD2": "YISA FAISHAT",
+   "FIELD3": "08/05/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "",
+   "FIELD2": "",
+   "FIELD3": "",
+   "FIELD4": "",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003413",
+   "FIELD2": "ABDULLAH ABEEB",
+   "FIELD3": "21/12/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003414",
+   "FIELD2": "ADEBAYO GOODNESS",
+   "FIELD3": "15/05/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003159",
+   "FIELD2": "ADEBOYE MUBARAK",
+   "FIELD3": "26/01/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003161",
+   "FIELD2": "ADEYEMI FAVOUR",
+   "FIELD3": "18/02/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003412",
+   "FIELD2": "AJUWON ISREAL",
+   "FIELD3": "29/10/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003079",
+   "FIELD2": "AZEEZ MUHEEZAT",
+   "FIELD3": "20/07/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003125",
+   "FIELD2": "BAMIDELE AYOMIDE",
+   "FIELD3": "03/08/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003128",
+   "FIELD2": "OGUNTADE EBENEZER",
+   "FIELD3": "20/04/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003129",
+   "FIELD2": "OKE OLUWAFEMI",
+   "FIELD3": "22/11/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003086",
+   "FIELD2": "OLADOKUN DAMILARE",
+   "FIELD3": "01/05/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003415",
+   "FIELD2": "OLUKUNLE KEHINDE",
+   "FIELD3": "06/12/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003090",
+   "FIELD2": "ONIFADE OLUWOLE",
+   "FIELD3": "03/05/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003340",
+   "FIELD2": "OWOLABI JOSHUA",
+   "FIELD3": "04/06/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003091",
+   "FIELD2": "OYELOLA MOYINOLA",
+   "FIELD3": "03/10/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003342",
+   "FIELD2": "SADIQ TOLULOP[E",
+   "FIELD3": "31/03/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003007",
+   "FIELD2": "SALAHUDEEN UTHMAN",
+   "FIELD3": "23/11/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003411",
+   "FIELD2": "SUBERU EMMANUEL",
+   "FIELD3": "17/08/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003406",
+   "FIELD2": "YUSSUF FAWAS",
+   "FIELD3": "12/11/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003409",
+   "FIELD2": "OYEDOTUN OYETOPE",
+   "FIELD3": "04/05/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003094",
+   "FIELD2": "ABDULAKEEM AMINAT F",
+   "FIELD3": "03/07/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003097",
+   "FIELD2": "ADELEKE MARVELOUS",
+   "FIELD3": "23/05/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003140",
+   "FIELD2": "ADEROGBE HANNAH",
+   "FIELD3": "02/11/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003099",
+   "FIELD2": "ADEWALE FATHIA",
+   "FIELD3": "28/07/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003319",
+   "FIELD2": "ADUNOYE ENIOLA",
+   "FIELD3": "05/07/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003102",
+   "FIELD2": "AKINBODE MARIAM",
+   "FIELD3": "20/08/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003186",
+   "FIELD2": "ALAMU TOLULOPE",
+   "FIELD3": "21/04/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003422",
+   "FIELD2": "ARIYO ABOSEDE",
+   "FIELD3": "10/09/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003106",
+   "FIELD2": "FADARE OLUWATOYIN",
+   "FIELD3": "04/01/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003149",
+   "FIELD2": " FALANA OYINDAMOLA",
+   "FIELD3": "08/09/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003189",
+   "FIELD2": "LATEEF SHAKIRAT",
+   "FIELD3": "18/03/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003190",
+   "FIELD2": "ODUNAYO SOLAFUNMI",
+   "FIELD3": "01/10/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003335",
+   "FIELD2": "OLA OLAJUMOKE",
+   "FIELD3": "08/10/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003423",
+   "FIELD2": "OLUWAYE MARY",
+   "FIELD3": "23/12/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003193",
+   "FIELD2": "OMOLAYO GIFT",
+   "FIELD3": "23/04/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003194",
+   "FIELD2": "OMOTOSHO WARIDAT",
+   "FIELD3": "29/06/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003197",
+   "FIELD2": "RAHEEM AISHAT",
+   "FIELD3": "26/07/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003121",
+   "FIELD2": "ADEOSUN SEYI",
+   "FIELD3": "17/04/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002899",
+   "FIELD2": "AJALA STEPHEN",
+   "FIELD3": "29/12/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003417",
+   "FIELD2": "AJAYI SAMUEL",
+   "FIELD3": "08/01/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003076",
+   "FIELD2": "AKANJI AYOMIDE ",
+   "FIELD3": "10/10/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003318",
+   "FIELD2": "ALABA COVENANT",
+   "FIELD3": "03/07/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003337",
+   "FIELD2": "GIDEON VICTOR",
+   "FIELD3": "24/03/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003083",
+   "FIELD2": "JIMOH PELUMI",
+   "FIELD3": "10/10/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003127",
+   "FIELD2": "OGUNLEYE AYOMIDE",
+   "FIELD3": "22/09/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003418",
+   "FIELD2": "OLANREWAJU MUTOLIB",
+   "FIELD3": "23/05/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003087",
+   "FIELD2": "OLANREWAJU SAMUEL",
+   "FIELD3": "11/12/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003419",
+   "FIELD2": "OLAYINKA VICTOR",
+   "FIELD3": "29/06/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003089",
+   "FIELD2": "ONI PRECIOUS",
+   "FIELD3": "17/06/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003133",
+   "FIELD2": "SAMSON JEREMIAH",
+   "FIELD3": "19/12/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002917",
+   "FIELD2": "SEMIU MUJEEB ",
+   "FIELD3": "22/11/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003135",
+   "FIELD2": "TIAMIYU TIHEEB",
+   "FIELD3": "02/03/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003169",
+   "FIELD2": "OLADIPO OLAKUNLE",
+   "FIELD3": "23/12/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003081",
+   "FIELD2": "FASOGBON VICTOR",
+   "FIELD3": "02/01/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003095",
+   "FIELD2": "ABDULKAREEM AMINAT D",
+   "FIELD3": "31/03/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003179",
+   "FIELD2": "ADEBAYO FARIDAT ",
+   "FIELD3": "23/03/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003141",
+   "FIELD2": "AFOLABI ELIZABETH",
+   "FIELD3": "04/08/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003142",
+   "FIELD2": "AGBOOLA INIOLUWA",
+   "FIELD3": "23/08/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003184",
+   "FIELD2": "AKINTUNDE DAMILOLA",
+   "FIELD3": "18/07/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003347",
+   "FIELD2": "ALADE AMIRAT ",
+   "FIELD3": "17/05/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003148",
+   "FIELD2": "ELUDIRE NANCY",
+   "FIELD3": "04/09/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003150",
+   "FIELD2": "HAMMED RUKAYAT ",
+   "FIELD3": "13/12/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003336",
+   "FIELD2": "JELILI AZEEZAT",
+   "FIELD3": "10/12/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003188",
+   "FIELD2": "KOLAPO CHRISTIANA",
+   "FIELD3": "21/07/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003151",
+   "FIELD2": "OBEMBE SULIYAT",
+   "FIELD3": "08/03/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003421",
+   "FIELD2": "OGUNDOYE TIMILEYIN ",
+   "FIELD3": "10/10/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003154",
+   "FIELD2": "OKUNLOLA NAFISAT",
+   "FIELD3": "04/09/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003156",
+   "FIELD2": "OYANIRAN IRETI",
+   "FIELD3": "27/02/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003196",
+   "FIELD2": "OYEYEMI IFEOLUWA",
+   "FIELD3": "02/01/2006",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003119",
+   "FIELD2": "ABDULAKEEM SODIQ",
+   "FIELD3": "18/07/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003419",
+   "FIELD2": "AKANNI CHARLES",
+   "FIELD3": "08/04/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003123",
+   "FIELD2": "AKINTUNJI SANJO",
+   "FIELD3": "23/07/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003078",
+   "FIELD2": "ALABI ADEDEJI",
+   "FIELD3": "28/08/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003164",
+   "FIELD2": "AMOO AYOMIDE",
+   "FIELD3": "17/11/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003366",
+   "FIELD2": "IBRAHIM PAUL",
+   "FIELD3": "21/02/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003082",
+   "FIELD2": "IMURAN QUDUS",
+   "FIELD3": "29/01/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003168",
+   "FIELD2": "ODETUNDE OLALEKAN",
+   "FIELD3": "11/09/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003088",
+   "FIELD2": "OLADIGBOLU FERANMI",
+   "FIELD3": "15/06/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003131",
+   "FIELD2": "OLUSOLA SAMUEL",
+   "FIELD3": "27/06/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003408",
+   "FIELD2": "OYEDOTUN OYENIYI",
+   "FIELD3": "05/08/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003172",
+   "FIELD2": "OYELEKE FAVOUR ",
+   "FIELD3": "02/01/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003171",
+   "FIELD2": "OWOLABI SAMUEL",
+   "FIELD3": "01/04/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003175",
+   "FIELD2": "SARAFADEEN MUJEEB ",
+   "FIELD3": "23/07/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003410",
+   "FIELD2": "SUBERU VICTOR",
+   "FIELD3": "27/09/2006",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003176",
+   "FIELD2": "YAQUB AKEEM ",
+   "FIELD3": "01/01/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003088",
+   "FIELD2": "OLUKUNLE TAIWO",
+   "FIELD3": "06/12/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003138",
+   "FIELD2": "ADEBUNMI BOSE ",
+   "FIELD3": "06/05/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003145",
+   "FIELD2": "AKOREDE GANIYAT",
+   "FIELD3": "31/08/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003107",
+   "FIELD2": "FALADE SOFIYAT ",
+   "FIELD3": "05/09/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003210",
+   "FIELD2": "OJO ENIOLA",
+   "FIELD3": "20/09/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002894",
+   "FIELD2": "OYEDOKUN DEBORAH ",
+   "FIELD3": "05/03/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003180",
+   "FIELD2": "ADEBAYO YETUNDE",
+   "FIELD3": "02/10/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003105",
+   "FIELD2": "ALADE OLABISI ",
+   "FIELD3": "07/06/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003146",
+   "FIELD2": "ALABI MARIAM",
+   "FIELD3": "04/12/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003346",
+   "FIELD2": "MUSIBAHUDEEN BARAKAT",
+   "FIELD3": "27/08/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003192",
+   "FIELD2": "OLAPADE TAOFIKAT",
+   "FIELD3": "08/03/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003096",
+   "FIELD2": "ADEDOKUN MARY ",
+   "FIELD3": "24/04/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003405",
+   "FIELD2": "AJIBISE VICTORIA",
+   "FIELD3": "02/01/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003147",
+   "FIELD2": "DAUDU KHADIJAT",
+   "FIELD3": "18/03/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003187",
+   "FIELD2": "JOSHUA DEBORAH",
+   "FIELD3": "01/11/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003154",
+   "FIELD2": "OLANIYAN ODUNOLA ",
+   "FIELD3": "31/12/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002934",
+   "FIELD2": "SH0BAYO IFEOLUWA",
+   "FIELD3": "18/04/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003515",
+   "FIELD2": "PAULINUS IHENTUGE SHARON",
+   "FIELD3": "04/08/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002808",
+   "FIELD2": "ARINOLA VICTOR",
+   "FIELD3": "14/06/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002897",
+   "FIELD2": "ADETONA TIMILEHIN",
+   "FIELD3": "29/04/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002896",
+   "FIELD2": "ADESALA JOHN",
+   "FIELD3": "02/05/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002918",
+   "FIELD2": "ADEWALE ABDULMATIN",
+   "FIELD3": "22/07/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003365",
+   "FIELD2": "ADESOLA KAMALIDEEN",
+   "FIELD3": "08/08/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003366",
+   "FIELD2": "AJALA SEFIU",
+   "FIELD3": "22/12/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002857",
+   "FIELD2": "AKINTUNDE DANIEL",
+   "FIELD3": "20/07/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003323",
+   "FIELD2": "AKOREDE HAMMED",
+   "FIELD3": "21/11/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003367",
+   "FIELD2": "ARIBIRE AYOMIDE",
+   "FIELD3": "22/09/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002813",
+   "FIELD2": "AYORINDE DAVID",
+   "FIELD3": "04/09/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002819",
+   "FIELD2": "ISOLA ADAM",
+   "FIELD3": "18/08/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003368",
+   "FIELD2": "LAWAL QUDUS ",
+   "FIELD3": "15/03/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002688",
+   "FIELD2": "ODELOLA VICTOR",
+   "FIELD3": "05/01/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002821",
+   "FIELD2": "OJO VICTOR",
+   "FIELD3": "12/01/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002870",
+   "FIELD2": "OLANREWAJU ROQUEEB",
+   "FIELD3": "13/05/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002823",
+   "FIELD2": "OLAPADE LATEEF",
+   "FIELD3": "17/07/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003369",
+   "FIELD2": "OMOLASOYE VICTOR",
+   "FIELD3": "21/11/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002861",
+   "FIELD2": "LAWAL FAWAZ",
+   "FIELD3": "22/02/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002833",
+   "FIELD2": "ABDULSALAM BUKOLA",
+   "FIELD3": "13/11/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003363",
+   "FIELD2": "ABDULSALAM FATHIA",
+   "FIELD3": "01/01/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002835",
+   "FIELD2": "ADENIRAN AYOMIDE",
+   "FIELD3": "04/09/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003320",
+   "FIELD2": "ADEKUNLE TEMILOLUWA",
+   "FIELD3": "30/05/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002925",
+   "FIELD2": "ADESOLA BALIKIS",
+   "FIELD3": "18/06/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002951",
+   "FIELD2": "AKINOLA FOLAKEMI",
+   "FIELD3": "12/11/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002928",
+   "FIELD2": "AKINOLA GLORY",
+   "FIELD3": "09/05/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002929",
+   "FIELD2": "AMOO ABIGAEL",
+   "FIELD3": "21/04/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002842",
+   "FIELD2": "GABRIEL BLESSING",
+   "FIELD3": "22/03/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002950",
+   "FIELD2": "KANAM JANET",
+   "FIELD3": "31/05/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003027",
+   "FIELD2": "LAWAL HALIMAT",
+   "FIELD3": "27/05/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003364",
+   "FIELD2": "OLAWUNI MARVELOUS",
+   "FIELD3": "18/03/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002933",
+   "FIELD2": "OWONIFARI OMOTOYOSI",
+   "FIELD3": "07/11/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002851",
+   "FIELD2": "OPADOYIN ADESEWA",
+   "FIELD3": "04/10/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003360",
+   "FIELD2": "ADEDOKUN ABDULQOWIN",
+   "FIELD3": "22/04/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003332",
+   "FIELD2": "ADELEKE PHILIP",
+   "FIELD3": "15/03/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003334",
+   "FIELD2": "ADIO TOBI",
+   "FIELD3": "",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002627",
+   "FIELD2": "AYOBAMI FAVOUR",
+   "FIELD3": "03/08/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002814",
+   "FIELD2": "BABALOLA SAMUEL",
+   "FIELD3": "25/02/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002902",
+   "FIELD2": "BAMIDELE FARUQ",
+   "FIELD3": "04/03/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003056",
+   "FIELD2": "EZEH EMEKA",
+   "FIELD3": "04/11/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002686",
+   "FIELD2": "GBADAMOSI FUHAD",
+   "FIELD3": "04/05/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002827",
+   "FIELD2": "LAWAL EMMANUEL",
+   "FIELD3": "12/09/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002820",
+   "FIELD2": "LASORE GBEMILEKE",
+   "FIELD3": "24/05/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002905",
+   "FIELD2": "OLANIYAN AFEEZ",
+   "FIELD3": "23/12/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003361",
+   "FIELD2": "OLADOSU OLUBUKUNMI ",
+   "FIELD3": "04/04/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003362",
+   "FIELD2": "OLAJIDE AYOMIDE",
+   "FIELD3": "15/08/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002914",
+   "FIELD2": "OYELEKE PELUMI",
+   "FIELD3": "09/06/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002830",
+   "FIELD2": "TIAMIYU SHERIFF",
+   "FIELD3": "05/01/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003331",
+   "FIELD2": "ORYEV DONALD",
+   "FIELD3": "04/05/1999",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002922",
+   "FIELD2": "ABDULAKEEM NAHEEMAOT",
+   "FIELD3": "02/07/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002875",
+   "FIELD2": "ADEKUNLE MIRACLE",
+   "FIELD3": "03/01/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002876",
+   "FIELD2": "ADEBOYE GLORY",
+   "FIELD3": "22/05/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002877",
+   "FIELD2": "ADELABU FATHIA",
+   "FIELD3": "20/07/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002924",
+   "FIELD2": "ADEMOLA GOODNESS",
+   "FIELD3": "28/01/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002837",
+   "FIELD2": "AFOLABI AYOMIDE",
+   "FIELD3": "25/07/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003359",
+   "FIELD2": "AYANWOLE FAVOUR",
+   "FIELD3": "30/06/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002882",
+   "FIELD2": "BUKOYE MOJIDAT",
+   "FIELD3": "11/12/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002883",
+   "FIELD2": "FOYAKE TUNMISE",
+   "FIELD3": "06/05/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002931",
+   "FIELD2": "HAMMED SEMIYAT",
+   "FIELD3": "24/06/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002844",
+   "FIELD2": "KOLADE DARASIMI",
+   "FIELD3": "18/12/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003370",
+   "FIELD2": "ODEGBEMI TOBI",
+   "FIELD3": "14/02/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002885",
+   "FIELD2": "MARINDOTI AYOMIDE",
+   "FIELD3": "05/11/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002892",
+   "FIELD2": "OMOWONUOLA OLUWASEUN",
+   "FIELD3": "14/11/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003517",
+   "FIELD2": "FATOLA FATHIA",
+   "FIELD3": "11/01/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003358",
+   "FIELD2": "ABIOLA ABEEB",
+   "FIELD3": "13/04/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002811",
+   "FIELD2": "ALADETOHUN MORENIKEJI",
+   "FIELD3": "06/05/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002855",
+   "FIELD2": "AJIBOYE PRAISE",
+   "FIELD3": "31/08/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002859",
+   "FIELD2": "AZENABOR PRAISE",
+   "FIELD3": "19/12/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002903",
+   "FIELD2": "FAJIMI FAVOUR",
+   "FIELD3": "02/12/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002860",
+   "FIELD2": "ISHOLA PAUL",
+   "FIELD3": "12/2/2005",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002865",
+   "FIELD2": "OGUNNIYI TOHEEB",
+   "FIELD3": "05/01/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003356",
+   "FIELD2": "OLADIPUPO SULTAN",
+   "FIELD3": "24/09/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002588",
+   "FIELD2": "OLAGUNJU CLINTON",
+   "FIELD3": "23/11/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002824",
+   "FIELD2": "OLANREWAJU QUDUS",
+   "FIELD3": "25/06/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003210",
+   "FIELD2": "OLAPADE FAWAZ",
+   "FIELD3": "",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003357",
+   "FIELD2": "OLAYIOYE FESTUS",
+   "FIELD3": "24/11/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002871",
+   "FIELD2": "ONUKWUBE IFEANYI",
+   "FIELD3": "28/11/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002913",
+   "FIELD2": "OPADOYIN ELISHA ",
+   "FIELD3": "05/04/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002872",
+   "FIELD2": "OWOADE SAMSON",
+   "FIELD3": "16/02/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002874",
+   "FIELD2": "TAIWO VINCENT",
+   "FIELD3": "18/04/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002834",
+   "FIELD2": "ABOLARIN ENIOLA",
+   "FIELD3": "20/08/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002923",
+   "FIELD2": "ADEBOLA NUSIRAT",
+   "FIELD3": "26/02/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003355",
+   "FIELD2": "ADETUTU YETUNDE",
+   "FIELD3": "",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003354",
+   "FIELD2": "AJIBOYE AMINAT",
+   "FIELD3": "20/04/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002840",
+   "FIELD2": "AKANFE ADEDAYO",
+   "FIELD3": "10/12/2000",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002880",
+   "FIELD2": "AKEEM TOYIN",
+   "FIELD3": "23/09/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002841",
+   "FIELD2": "AKINLEYE FAVOUR",
+   "FIELD3": "30/05/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003071",
+   "FIELD2": "ISAAC BOSE",
+   "FIELD3": "10/06/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003333",
+   "FIELD2": "JIMOH NAIMOT",
+   "FIELD3": "02/06/2005",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002845",
+   "FIELD2": "LAWAL AYOMIDE",
+   "FIELD3": "08/08/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002889",
+   "FIELD2": "OLULEKE IFEOLUWA",
+   "FIELD3": "02/05/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002887",
+   "FIELD2": "OGUNTUNDE ZAINAB",
+   "FIELD3": "07/04/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002893",
+   "FIELD2": "OYEBODE FERANMI",
+   "FIELD3": "07/12/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002921",
+   "FIELD2": "ABIALA ADEOLA",
+   "FIELD3": "06/02/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002574",
+   "FIELD2": "ABDULATEEF IBRAHIM",
+   "FIELD3": "17/04/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003206",
+   "FIELD2": "ADUBI SEGUN",
+   "FIELD3": "07/07/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002651",
+   "FIELD2": "AWOROKUN JOHNSON",
+   "FIELD3": "04/08/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002684",
+   "FIELD2": "BABAWALE AYANFE",
+   "FIELD3": "17/09/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002622",
+   "FIELD2": "FATADE FATOKI ",
+   "FIELD3": "31/08/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002623",
+   "FIELD2": "ISHOLA SAMUEL",
+   "FIELD3": "27/02/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003068",
+   "FIELD2": "ODEWUMI ISAAC",
+   "FIELD3": "13/09/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002624",
+   "FIELD2": "OJO ADEDOLAPO",
+   "FIELD3": "30/03/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003214",
+   "FIELD2": "OLADOSU MUJEEB",
+   "FIELD3": "29/11/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002689",
+   "FIELD2": "OLADELE EMMANUEL",
+   "FIELD3": "28/04/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002590",
+   "FIELD2": "OLAPADE FAROUK",
+   "FIELD3": "16/06/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003371",
+   "FIELD2": "OLOYEDE FERANMI",
+   "FIELD3": "13/05/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002690",
+   "FIELD2": " OLANIRAN EMMANUEL",
+   "FIELD3": "01/12/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003372",
+   "FIELD2": "OLANIYAN GAFAR",
+   "FIELD3": "25/05/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002591",
+   "FIELD2": "OSUNDINA SEGUN ",
+   "FIELD3": "03/10/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002656",
+   "FIELD2": "OYENIYI TIMOTHY",
+   "FIELD3": "22/08/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003328",
+   "FIELD2": "AFOLABI DAVID",
+   "FIELD3": "06/09/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003216",
+   "FIELD2": "AYOADE FAWAZ",
+   "FIELD3": "10/05/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002655",
+   "FIELD2": "OLAPADE TOHEEB ",
+   "FIELD3": "27/03/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002996",
+   "FIELD2": "ADETUNJI JAMIU",
+   "FIELD3": "05/04/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003373",
+   "FIELD2": "OJO AYOMIDE",
+   "FIELD3": "29/03/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003374",
+   "FIELD2": "ADEKUNLE ABEEB ",
+   "FIELD3": "",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003375",
+   "FIELD2": "ALABI MICHAEL",
+   "FIELD3": "23/06/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002634",
+   "FIELD2": "ABIONA JOY",
+   "FIELD3": "24/12/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002695",
+   "FIELD2": "ADEBAYO KABIRAT",
+   "FIELD3": "20/03/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002596",
+   "FIELD2": "ADEDEJI IKEADE ",
+   "FIELD3": "17/06/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002778",
+   "FIELD2": "ADEREMI PEACE",
+   "FIELD3": "29/03/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002697",
+   "FIELD2": "ADETUTU TOBILOBA",
+   "FIELD3": "30/08/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002711",
+   "FIELD2": "AKINOLA GIFT",
+   "FIELD3": "21/12/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002698",
+   "FIELD2": "AMOO ESTHER",
+   "FIELD3": "09/04/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002700",
+   "FIELD2": "BAMIDELE AZEEZAT",
+   "FIELD3": "18/01/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002701",
+   "FIELD2": "IDOWU MARIAM ",
+   "FIELD3": "26/05/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002603",
+   "FIELD2": "JAYEOLA PRECIOUS",
+   "FIELD3": "25/07/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002671",
+   "FIELD2": "KANJUNI PEACE",
+   "FIELD3": "08/09/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002706",
+   "FIELD2": "LAWAL YEMISI",
+   "FIELD3": "07/06/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002707",
+   "FIELD2": "OLAYEMI AFUSAT",
+   "FIELD3": "03/11/2000",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002674",
+   "FIELD2": "OLAYODE PRECIOUS",
+   "FIELD3": "25/08/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002610",
+   "FIELD2": "POPOOLA DORCAS",
+   "FIELD3": "14/06/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002677",
+   "FIELD2": "RAFIU FATHIA",
+   "FIELD3": "08/11/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003015",
+   "FIELD2": "SALAHUDEEN MARYAM",
+   "FIELD3": "19/11/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002612",
+   "FIELD2": "SULU NAFISAT",
+   "FIELD3": "05/12/2000",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002615",
+   "FIELD2": "USIDEME SANDRA",
+   "FIELD3": "25/12/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002641",
+   "FIELD2": "OYEBOADE PRECIOUS",
+   "FIELD3": "07/02/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002646",
+   "FIELD2": "YUSUF HALIMOT",
+   "FIELD3": "01/09/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002597",
+   "FIELD2": "ADEDIJI FUNMILAYO",
+   "FIELD3": "11/02/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003217",
+   "FIELD2": "ADEBISI AYOMIDE ",
+   "FIELD3": "26/12/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003218",
+   "FIELD2": "ADEGBOLA EMMANUEL",
+   "FIELD3": "14/05/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002781",
+   "FIELD2": "ADEOYE DEMILADE",
+   "FIELD3": "14/10/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002647",
+   "FIELD2": "ADEYEMI HENRY",
+   "FIELD3": "27/07/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002617",
+   "FIELD2": "ADISA OLUWASEUN",
+   "FIELD3": "03/10/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002682",
+   "FIELD2": "AFOLABI ISREAL",
+   "FIELD3": "26/03/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003376",
+   "FIELD2": "AFOLABI TOHEEB ",
+   "FIELD3": "08/06/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002618",
+   "FIELD2": "AKINWALE ABIODUN",
+   "FIELD3": "25/12/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002441",
+   "FIELD2": "BABALOLA OLAREWAJU",
+   "FIELD3": "26/09/1997",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002767",
+   "FIELD2": "EMMANUEL DAVID",
+   "FIELD3": "24/05/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002806",
+   "FIELD2": "PAULINUS THENTUGE FAVOR",
+   "FIELD3": "18/02/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003351",
+   "FIELD2": "JAMES VITORY",
+   "FIELD3": "31/03/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003222",
+   "FIELD2": "MASHOOD ABDULGAFAR",
+   "FIELD3": "16/11/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002625",
+   "FIELD2": "OLADEJI AJIBOLA",
+   "FIELD3": "11/07/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002589",
+   "FIELD2": "OLANIRAN AYOMIDE",
+   "FIELD3": "26/04/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003219",
+   "FIELD2": "OYETADE OLABODE",
+   "FIELD3": "",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002592",
+   "FIELD2": "OYEYEMI ELIJAH ",
+   "FIELD3": "08/09/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002694",
+   "FIELD2": "YAKUB OLALEKAN",
+   "FIELD3": "06/07/1999",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002657",
+   "FIELD2": "OYETUNDE OYEWALE",
+   "FIELD3": "30/04/1999",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003227",
+   "FIELD2": "ADELEKE OLUWAKEMI",
+   "FIELD3": "26/07/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003377",
+   "FIELD2": "ADEWUMI ELEZABETH",
+   "FIELD3": "08/03/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003378",
+   "FIELD2": "AKANDE VICTORIA ",
+   "FIELD3": "26/05/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002665",
+   "FIELD2": "AKINOLA GRACE",
+   "FIELD3": "07/09/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002601",
+   "FIELD2": "AJAYI OLAWUMI ",
+   "FIELD3": "09/08/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002644",
+   "FIELD2": "FABODE DAMILOLA",
+   "FIELD3": "28/09/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003226",
+   "FIELD2": "FALANA PRECIOUS ",
+   "FIELD3": "19/10/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002670",
+   "FIELD2": "JIMOH SEFIYAT",
+   "FIELD3": "07/12/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002639",
+   "FIELD2": "OJO ADEDOYIN ",
+   "FIELD3": "19/10/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003215",
+   "FIELD2": "OLADOSU MAZIDAT",
+   "FIELD3": "07/02/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002673",
+   "FIELD2": "OLAJIDE BUKOLA",
+   "FIELD3": "22/08/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003330",
+   "FIELD2": "OLASUPO OLAJUMOKE",
+   "FIELD3": "29/05/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002607",
+   "FIELD2": "OLAYEMI KHADIJAT",
+   "FIELD3": "29/01/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003349",
+   "FIELD2": "OMOWARE DARAMOLA",
+   "FIELD3": "06/02/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003379",
+   "FIELD2": "ONADIPE MOTUNRAYO",
+   "FIELD3": "16/02/2004",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002614",
+   "FIELD2": "OPATOLA ABIDEMI",
+   "FIELD3": "19/02/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002642",
+   "FIELD2": "OYEDELE BARAKAT",
+   "FIELD3": "15/04/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002752",
+   "FIELD2": "OYEYEMI IYANUOLUWA",
+   "FIELD3": "19/05/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003348",
+   "FIELD2": "TAIWO OYINDAMOLA",
+   "FIELD3": "02/04/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003380",
+   "FIELD2": "ADEOSUN DAMILOLA",
+   "FIELD3": "28/06/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002680",
+   "FIELD2": "ADEWALE SELIM",
+   "FIELD3": "09/02/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "00381",
+   "FIELD2": "AKINWALE CORNELIUS",
+   "FIELD3": "01/01/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003007",
+   "FIELD2": "EMIIYA ABDULMAJEED",
+   "FIELD3": "06/02/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003382",
+   "FIELD2": "ISHOLA DOLAPO ",
+   "FIELD3": "14/04/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003383",
+   "FIELD2": "OLABIYI MOSES",
+   "FIELD3": "25/05/1999",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002678",
+   "FIELD2": "OLAPADE IBRAHIM ",
+   "FIELD3": "22/01/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002629",
+   "FIELD2": "OLUYOMI STEPHEN",
+   "FIELD3": "31/07/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003329",
+   "FIELD2": "POPOOLA OLALEKAN",
+   "FIELD3": "30/03/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002635",
+   "FIELD2": "ADEDOYIN ADEKEMI",
+   "FIELD3": "23/09/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002598",
+   "FIELD2": "ADEKUNLE FOLAKEMI",
+   "FIELD3": "27/08/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "0023384",
+   "FIELD2": "ALABI ISLAMIAT ",
+   "FIELD3": "05/11/2000",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002774",
+   "FIELD2": "DANIEL MARY",
+   "FIELD3": "18/03/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002668",
+   "FIELD2": "FOLORUNSHO ESTHER",
+   "FIELD3": "18/11/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002669",
+   "FIELD2": "IKOKOH WONDERFUL",
+   "FIELD3": "13/01/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002702",
+   "FIELD2": "IDRIS HALIMOT",
+   "FIELD3": "23/07/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002605",
+   "FIELD2": "OKUNLADE ZAINAB",
+   "FIELD3": "03/05/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002756",
+   "FIELD2": "OMOLAOYE TIMILEHIN",
+   "FIELD3": "19/06/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002609",
+   "FIELD2": "OYETOBI ANUOLUWAPO",
+   "FIELD3": "13/03/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002611",
+   "FIELD2": "SODIPE BUKAYO",
+   "FIELD3": "27/07/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003047",
+   "FIELD2": "ABDULAZEEZ MUKTAR",
+   "FIELD3": "24/11/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003019",
+   "FIELD2": "ADEBAYO FEMI",
+   "FIELD3": "06/10/1997",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003045",
+   "FIELD2": "ADEBAYO SODIQ",
+   "FIELD3": "14/03/1999",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002430",
+   "FIELD2": "ADEBIYI ABDULLAHI",
+   "FIELD3": "06/04/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002202",
+   "FIELD2": "ADEBIYI TOHEEB",
+   "FIELD3": "01/04/1999",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003038",
+   "FIELD2": "ADEDIJI KOREDE",
+   "FIELD3": "04/10/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003390",
+   "FIELD2": "ADEGBITE TIMILEHIN ",
+   "FIELD3": "05/05/1998",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "02401",
+   "FIELD2": "ADEITAN ADEOLUWA",
+   "FIELD3": "23/05/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003391",
+   "FIELD2": "ADESOKAN DAMILARE",
+   "FIELD3": "20/03/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002433",
+   "FIELD2": "ADEPOJU IGE",
+   "FIELD3": "26/02/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002464",
+   "FIELD2": "ADIGUNSESAN AKINDAYO",
+   "FIELD3": "27/12/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003392",
+   "FIELD2": "ADUNOYE DANIEL",
+   "FIELD3": "01/04/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002470",
+   "FIELD2": "AOFOLAJU MAYOWA",
+   "FIELD3": "27/10/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002404",
+   "FIELD2": "AJAYI DANIEL ",
+   "FIELD3": "19/10/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002440",
+   "FIELD2": "AZENEBOR SAMUEL",
+   "FIELD3": "20/04/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002472",
+   "FIELD2": "FADARE AYOMIDE",
+   "FIELD3": "04/05/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002411",
+   "FIELD2": "JOSEPH TOLULOPE",
+   "FIELD3": "16/07/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003393",
+   "FIELD2": "OKEWOLE MATTHEW",
+   "FIELD3": "",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003030",
+   "FIELD2": "OKUNLOLA JUBRIL ",
+   "FIELD3": "21/02/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002413",
+   "FIELD2": "ONIFADE LUKE",
+   "FIELD3": "02/04/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003014",
+   "FIELD2": "OYEKUNLE ISAAC ",
+   "FIELD3": "23/03/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003394",
+   "FIELD2": "OYEKUNLE PHILLIP",
+   "FIELD3": "24/09/2003",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002446",
+   "FIELD2": "OYELEKE  STEPHEN ",
+   "FIELD3": "21/09/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003050",
+   "FIELD2": "OYENIRAN VICTOR",
+   "FIELD3": "15/10/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003395",
+   "FIELD2": "OWOADE GIDEON",
+   "FIELD3": "13/10/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002535",
+   "FIELD2": "SHIYANBOLA VICTORY",
+   "FIELD3": "12/10/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002177",
+   "FIELD2": "TAIWO AKINTOMIWA",
+   "FIELD3": "09/06/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003327",
+   "FIELD2": "OLAYERA OLUWATOBI",
+   "FIELD3": "17/05/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002437",
+   "FIELD2": "AJIBOYE AYODEJI",
+   "FIELD3": "19/12/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002448",
+   "FIELD2": "ABDULHAKEEM KHADIJAT",
+   "FIELD3": "09/10/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003020",
+   "FIELD2": "ADEBAYO REBECCA ",
+   "FIELD3": "09/05/1999",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002416",
+   "FIELD2": "ADEBAYO BLESSING",
+   "FIELD3": "23/11/2000",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002449",
+   "FIELD2": "ADEBISI MUJIDAT ",
+   "FIELD3": "29/12/2000",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002417",
+   "FIELD2": "ADEGOKE PRECIOUS",
+   "FIELD3": "27/05/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002418",
+   "FIELD2": "ADELEKE ADESHEWA",
+   "FIELD3": "19/02/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002480",
+   "FIELD2": "ADERINTO CHRISTANA",
+   "FIELD3": "28/08/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002420",
+   "FIELD2": "ADESORIN OLUWAKEMI",
+   "FIELD3": "20/11/1999",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002453",
+   "FIELD2": "AFOLABI DEBORAH",
+   "FIELD3": "01/04/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003387",
+   "FIELD2": "ALAO GRACE ",
+   "FIELD3": "23/06/1999",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003034",
+   "FIELD2": "AMOO ADIJAT",
+   "FIELD3": "19/04/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002454",
+   "FIELD2": "FAJEMILO CECILIA ",
+   "FIELD3": "21/09/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002953",
+   "FIELD2": "FOLARANMI CHRISTIANA",
+   "FIELD3": "06/09/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002455",
+   "FIELD2": "IYANDA KABIRAT",
+   "FIELD3": "23/10/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002456",
+   "FIELD2": "LAWAL JESUTOFUNMI",
+   "FIELD3": "07/10/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003055",
+   "FIELD2": "OGUNDIPE BUKOLA",
+   "FIELD3": "20/01/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003067",
+   "FIELD2": "OGUNLEYE DAMILOLA",
+   "FIELD3": "05/05/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003117",
+   "FIELD2": "OYEJOBI IYINOLUWA",
+   "FIELD3": "25/12/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003388",
+   "FIELD2": "OYEWUMI ESTHER",
+   "FIELD3": "18/04/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003389",
+   "FIELD2": "UKPORPO BOSE",
+   "FIELD3": "27/02/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002461",
+   "FIELD2": "VICTOR FELICIA",
+   "FIELD3": "23/12/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003046",
+   "FIELD2": "LAWAL ESTHER",
+   "FIELD3": "19/07/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002407",
+   "FIELD2": "ADEBAYO SUNDAY",
+   "FIELD3": "27/10/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002462",
+   "FIELD2": "ADEBISI EMMANUEL ",
+   "FIELD3": "10/01/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002400",
+   "FIELD2": "ADEWOYE IDOWU",
+   "FIELD3": "21/09/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003012",
+   "FIELD2": "ADEYEFA OLUWAJOBA",
+   "FIELD3": "11/04/1998",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003001",
+   "FIELD2": "AKINWUYI OLUWASEGUN",
+   "FIELD3": "12/06/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002164",
+   "FIELD2": "AKINYEMI QUOZEEM",
+   "FIELD3": "10/02/1996",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002207",
+   "FIELD2": "AJAYI SODIQ",
+   "FIELD3": "09/11/1999",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002471",
+   "FIELD2": " AYENI  MARTINS",
+   "FIELD3": "21/09/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002409",
+   "FIELD2": "BABALOLA AYOMIDELE",
+   "FIELD3": "24/09/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003018",
+   "FIELD2": "KUYE TIJESUNI",
+   "FIELD3": "23/04/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003116",
+   "FIELD2": "ODEGBAMI SAMSON",
+   "FIELD3": "27/03/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003386",
+   "FIELD2": "OLADIPUPO ISREAL",
+   "FIELD3": "28/01/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002854",
+   "FIELD2": "OLOYEDE BARNABAS",
+   "FIELD3": "24/09/2004",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002519",
+   "FIELD2": "SHAMMAH AMEN",
+   "FIELD3": "11/11/2000",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003516",
+   "FIELD2": "AJAGBE WARIS",
+   "FIELD3": "24/09/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002481",
+   "FIELD2": "ADENIYI GBEMISOLA",
+   "FIELD3": "28/10/1999",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003054",
+   "FIELD2": "ADEMOLA GLORY",
+   "FIELD3": "09/05/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002419",
+   "FIELD2": "ADEOYE ODUNAYOMIDE",
+   "FIELD3": "26/12/1999",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003037",
+   "FIELD2": "ADEWUMI BLESSING",
+   "FIELD3": "17/01/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003025",
+   "FIELD2": "AKINPELU KEHINDE ",
+   "FIELD3": "01/01/2000",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003024",
+   "FIELD2": "LAWAL ARIFAT",
+   "FIELD3": "22/08/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003013",
+   "FIELD2": " LAWAL IFEOLUWA",
+   "FIELD3": "13/10/1999",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002484",
+   "FIELD2": "LUKMAN SEKINAT",
+   "FIELD3": "24/11/2000",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002458",
+   "FIELD2": "ODUWOBI GLORY",
+   "FIELD3": "25/05/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002423",
+   "FIELD2": "OHWODUE BOLUWATIFE",
+   "FIELD3": "28/10/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003940",
+   "FIELD2": "OJEREMI STELLA",
+   "FIELD3": "17/11/2002",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003033",
+   "FIELD2": "OLANREWAJU SUKURAT",
+   "FIELD3": "04/02/2003",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002478",
+   "FIELD2": "OLOYEDE JOLAADURA",
+   "FIELD3": "20/07/2000",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002488",
+   "FIELD2": "OPADOYIN RONKE",
+   "FIELD3": "15/08/1999",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+
+ {
+   "FIELD1": "002463",
+   "FIELD2": "ADEDIRAN AYOMIDE",
+   "FIELD3": "01/09/1999",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002432",
+   "FIELD2": "ADESIDA OLAOLUWA",
+   "FIELD3": "04/10/2001",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002410",
+   "FIELD2": "IDOWU OLUWASEYI ",
+   "FIELD3": "10/04/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003258",
+   "FIELD2": "OLAOYE RIDWAN",
+   "FIELD3": "06/04/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002414",
+   "FIELD2": "OLAYIWOLA OLAEKAN",
+   "FIELD3": "11/02/2002",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002476",
+   "FIELD2": "SALAUDEEN QUADRI",
+   "FIELD3": "05/05/1999",
+   "FIELD4": "M",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003385",
+   "FIELD2": "AFOLABI FAVOUR",
+   "FIELD3": "06/11/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003029",
+   "FIELD2": "AKANFE MODUPE",
+   "FIELD3": "07/07/1999",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002422",
+   "FIELD2": "IDRIS IFEOLUWA",
+   "FIELD3": "12/01/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002425",
+   "FIELD2": "OLADAPO DOLAPO",
+   "FIELD3": "25/11/2000",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002490",
+   "FIELD2": "OLATUNBOSUN MARVELOUS",
+   "FIELD3": "14/06/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002427",
+   "FIELD2": "OWOLABI ESTHER ",
+   "FIELD3": "14/04/2001",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "003021",
+   "FIELD2": "OYELEKE DOLAPO",
+   "FIELD3": "02/02/1997",
+   "FIELD4": "F",
+   "FIELD5": ""
+ },
+ {
+   "FIELD1": "002199",
+   "FIELD2": "WASIU ODUNOLA",
+   "FIELD3": "13/04/1997",
+   "FIELD4": "F",
+   "FIELD5": ""
+ }
+]

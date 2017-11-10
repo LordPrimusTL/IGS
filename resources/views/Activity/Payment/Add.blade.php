@@ -22,11 +22,10 @@
                                 <option value="">Select Student</option>
                                 <?php $stud = \App\Student::all();?>
                                 @foreach($stud as $s)
-                                    <option value="{{$s->adm_id}}" {{$pay != null ? $pay->stud_id === $s->adm_id ? 'selected' : '' : ''}}>{{$s->fullname}}</option>
+                                    <option {{$adm_id != null ? $adm_id == $s->adm_id ? 'selected' :'' : '' }} value="{{$s->adm_id}}" {{$pay != null ? $pay->stud_id === $s->adm_id ? 'selected' : '' : ''}}>{{$s->fullname}}</option>
                                 @endforeach
                             </select>
                         </div>
-
                         <label for="sess">Session: </label>
                         <div class="form-group">
                             <select required name="sess" id="sess" class="form-control">
@@ -59,7 +58,6 @@
                                 @endforeach
                             </select>
                         </div>
-
                         <label for="for">Payment For: </label>
                         <div class="form-group">
                             <select required name="pl" id="pl" class="form-control">
@@ -71,11 +69,13 @@
                             </select>
                         </div>
 
-
-
                         <label for="amount"> Amount(NGN): </label>
                         <div class="form-group">
                             <input class="form-control" type="number" required name="amount" id="amount" placeholder="Amount" value="{{$pay != null ? $pay->amount : " "}}"/>
+                        </div>
+                        <label for="date_of_payment"> Date of Payment: </label>
+                        <div class="form-group">
+                            <input class="form-control" type="text" required name="date_of_payment" id="date_of_payment" placeholder="dd/mm/yyyy" value="{{$pay != null ? $pay->date_of_payment : ""}}"/>
                         </div>
 
                         <button type="submit"  class="btn btn-default btn-block"><i class="fa fa-save"></i> Save</button>

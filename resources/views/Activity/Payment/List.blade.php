@@ -40,7 +40,7 @@
                     {{csrf_field()}}
                     <label for="payname"> Payment Name: </label>
                     <div class="form-group">
-                        <input class="form-control" type="text" required name="payname" id="payname" placeholder="Payment Name"/>
+                        <input class="form-control" autofocus autocomplete type="text" required name="payname" id="payname" placeholder="Payment Name"/>
                     </div>
                     <button type="submit" class="btn btn-default btn-block"><i class="fa fa-plus-circle"></i> Add To Payments</button>
                 </form>
