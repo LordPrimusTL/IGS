@@ -52,7 +52,7 @@
                                 <option value="">Select Status</option>
                                 <?php $s = \App\StudStatus::all()?>
                                 @foreach($s as $e)
-                                    <option {{$stud != null ? $stud->s_id == $e->id ? 'selected disabled' : '' : ""}} value="{{$e->id}}">{{$e->name}}</option>
+                                    <option {{$stud != null ? $stud->s_id == $e->id ? 'selected' : '' : ""}} value="{{$e->id}}">{{$e->name}}</option>
                                 @endforeach
                             </select>
                         </div>

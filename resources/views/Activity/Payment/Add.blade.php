@@ -22,7 +22,7 @@
                                 <option value="">Select Student</option>
                                 <?php $stud = \App\Student::all();?>
                                 @foreach($stud as $s)
-                                    <option {{$adm_id != null ? $adm_id == $s->adm_id ? 'selected' :'' : '' }} value="{{$s->adm_id}}" {{$pay != null ? $pay->stud_id === $s->adm_id ? 'selected' : '' : ''}}>{{$s->fullname}}</option>
+                                    <option {{$id != null ? $id == $s->id ? 'selected' :'' : '' }} value="{{$s->id}}" {{$pay != null ? $pay->stud_id === $s->id ? 'selected' : '' : ''}}>{{$s->fullname}}</option>
                                 @endforeach
                             </select>
                         </div>

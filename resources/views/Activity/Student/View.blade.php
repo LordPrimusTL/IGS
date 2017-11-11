@@ -52,7 +52,7 @@
                             <td>{{$u->stat->name}}</td>
                             <td>
                                 <a href="{{route('viewPaymentID',['col' => encrypt('stud_id'),'val' => encrypt($u->id)])}}" data-toggle="tooltip" title="view Payment" class="btn btn-success btn-sm"><i class="fa fa-money"></i></a>
-                                <a href="{{route('studentActionAdd',['token' => encrypt($u->adm_id)])}}" data-toggle="tooltip" title="Add Payment" class="btn btn-info btn-sm"><i class="fa fa-credit-card"></i></a>
+                                <a href="{{route('studentActionAdd',['token' => encrypt($u->id)])}}" data-toggle="tooltip" title="Add Payment" class="btn btn-info btn-sm"><i class="fa fa-credit-card"></i></a>
                                 <a href="{{route('studentActionEdit',['id' => encrypt($u->id)])}}" data-toggle="tooltip" title="Edit Student" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
                                 @if(\App\Helpers\AuthCheck::Admin())
                                     <a href="{{route('studentActionDelete',['id' => encrypt($u->id)])}}" data-toggle="tooltip" title="Delete Student" onclick="return confirm('This Process cannot be undone. Do you want to continue?');" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>

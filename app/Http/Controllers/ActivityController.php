@@ -109,7 +109,6 @@ class ActivityController extends Controller
             $this->getLogger()->LogError('Unable To Revoke Access', $ex, ['$user' => decrypt($token),'by' => Auth::id()]);
         }
         return redirect()->back();
-        dd($token);
     }
     public function DeleteUser($token){
         $u = null;
@@ -117,7 +116,6 @@ class ActivityController extends Controller
             $user = User::find(decrypt($token));
             $u = $user;
             $user->delete();
-            //$user->save();
             Session::flash('success',$u->email .' has been deleted successfully.');
             $this->getLogger()->LogInfo('User Has Been Deleted',['user' => $u,'by' => Auth::id()]);
         }
@@ -152,7 +150,7 @@ class ActivityController extends Controller
         //dd($action);
         if($action != null && $token != null)
         {
-            return view('Activity.Payment.Add',['title' => 'Add Payment', 'pay' =>  null,'type' => 1,'adm_id' => $action]);
+            return view('Activity.Payment.Add',['title' => 'Add Payment', 'pay' =>  null,'type' => 1,'id' => $action]);
         }
         return redirect()->back();
 
@@ -213,12 +211,11 @@ class ActivityController extends Controller
             $stud->adm_id = $request->adm_id;
             $stud->s_id = $request->status;
             $stud->parent_phone_number = $request->parent_phone_number;
-            //dd($stud);
             $stud->save();
             $request->type == 1 ? $action = 'Added' : $action = 'Edited';
             Session::flash('success','Student ' . $action. ' Successfully');
             $this->getLogger()->LogInfo('Student Has Been ' . $action,['stud' => $stud,'by' => Auth::id()]);
-            return view('Activity.Student.View',['title' => 'Students','stud' =>  Student::where('id',$stud->id)->get(), 'key' => $stud->adm_id]);
+            return view('Activity.Student.View',['title' => 'Students','stud' =>  Student::where('id',$stud->id)->get(), 'key' => $stud->adm_id, 's'=>null]);
         }
         catch (\Exception $ex)
         {
@@ -243,7 +240,7 @@ class ActivityController extends Controller
                 if($s != null)
                     $query->orwhere('s_id','LIKE','%'. ($s != null ? $s->id : '')  . '%');
             //dd($request->all(), $query->get());
-            return view('Activity.Student.View',['title' => 'Students','stud' =>  $query->get(), 'key' => $k,'s' => true]);
+            return view('Activity.Student.View',['title' => 'Students','stud' =>  $query->get(), 'key' => $k,'s' => null]);
         }
         return redirect()->back();
     }
@@ -260,7 +257,7 @@ class ActivityController extends Controller
 
     public function ClassAdd(Request $request)
     {
-        //dd($request->all());
+        //Add Class
         $this->validate($request,[
            'type' => 'required',
             'name' => 'required',
@@ -421,6 +418,7 @@ class ActivityController extends Controller
         $pay->date_of_payment = $request->date_of_payment;
         try{
             //dd($pay, $action);
+            //dd($pay);
             $pay->save();
             Session::flash('success','Payment ' . $action . ' Successfully.');
             $this->getLogger()->LogInfo('Payment added successfuly',['pay' => $pay,'by' => Auth::id(),'oldPay' => $old_p]);

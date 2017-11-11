@@ -24,7 +24,7 @@ class Payment extends Model
 
     public function stud()
     {
-        return $this->belongsTo(Student::class, 'id');
+        return $this->belongsTo(Student::class, 'stud_id','id');
     }
 
     public function sess()

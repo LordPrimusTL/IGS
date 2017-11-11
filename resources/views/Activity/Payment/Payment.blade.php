@@ -57,7 +57,7 @@
                             <!--<td>
                                 <a href="{{route('editUser',['token' => encrypt(1)])}}" data-toggle="tooltip" title="Edit Payment" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
                                 <a href="{{route('deleteUser',['token' => encrypt(1)])}}" data-toggle="tooltip" title="Delete User" onclick="return confirm('This Process cannot be undone and you can\'t re-use this email for another purpose on this site. Do you want to continue?');" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
-                            </td>
+                            </td>-->
                         </tr>
                     @endforeach
                         <tr class="alert alert-success">
