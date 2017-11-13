@@ -75,6 +75,9 @@
                     </tbody>
                 </table>
             </div>
+            <div class="myCenter">
+                {{$s == null ? ' ' : $pay->links()}}
+            </div>
         </div>
     </div>
 @endsection

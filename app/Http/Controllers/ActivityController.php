@@ -254,7 +254,6 @@ class ActivityController extends Controller
     {
         dd(decrypt($token));
     }
-
     public function ClassAdd(Request $request)
     {
         //Add Class
@@ -282,7 +281,6 @@ class ActivityController extends Controller
     {
         return view('Activity.Payment.List',['title' =>'Payment List','list' => PaymentList::orderByDesc('created_at')->get()]);
     }
-
     public function AddPaymentList(Request $request)
     {
         $this->validate($request,[
@@ -306,7 +304,6 @@ class ActivityController extends Controller
 
         return redirect()->back();
     }
-
     public function DeletePayList($token)
     {
         $s = null;
@@ -353,18 +350,15 @@ class ActivityController extends Controller
 
     }
 
-
     //Payment
     public function ViewPayment()
     {
-        return view('Activity.Payment.Payment',['title' => 'Payment', 'pay' => Payment::orderBydesc('created_at')->get(),'key'=> null]);
+        return view('Activity.Payment.Payment',['title' => 'Payment', 'pay' => Payment::orderBydesc('created_at')->paginate(100),'key'=> null, 's' => 'DATA']);
     }
     public function ViewPaymentCol($col,$val)
     {
-        return view('Activity.Payment.Payment',['title' => 'Payment', 'pay' => Payment::where(decrypt($col),'=', decrypt($val))->get(),'key'=>null]);
+        return view('Activity.Payment.Payment',['title' => 'Payment', 'pay' => Payment::where(decrypt($col),'=', decrypt($val))->get(),'key'=>null, 's'=>null]);
     }
-
-
     public function PaymentAction($token)
     {
         if(decrypt($token) == 1)
@@ -372,7 +366,6 @@ class ActivityController extends Controller
             return view('Activity.Payment.Add',['title' => 'Add Payment', 'pay' =>  null,'type' => 1,'adm_id' => null]);
         }
     }
-
     public function PaymentSave(Request $request)
     {
         $action = '';
@@ -481,7 +474,7 @@ class ActivityController extends Controller
                 $p->where('amount','LIKE' ,'%' . $a[7] . '%');
             }
             //dd($p->get());
-            return view('Activity.Payment.Payment',['title' => 'Payment', 'pay' => $p->orderByDesc('created_at')->get(),'key' => $request->key]);
+            return view('Activity.Payment.Payment',['title' => 'Payment', 'pay' => $p->orderByDesc('created_at')->get(),'key' => $request->key, 's'=>null]);
         }
         catch (\Exception $ex)
         {
