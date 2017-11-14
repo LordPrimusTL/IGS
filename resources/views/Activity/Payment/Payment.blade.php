@@ -38,7 +38,7 @@
                     <th>For</th>
                     <th>Amount</th>
                     <th>DOP</th>
-                    <!--<th>Action</th>-->
+                    <th>Action</th>
                     </thead>
                     <?php $i = 1; $total = 0;?>
                     <tbody>
@@ -54,9 +54,10 @@
                             <td>{{$p->list->name}}</td>
                             <td>{{$p->amount}}</td>
                              <td>{{$p->date_of_payment}}</td>
-                            <!--<td>
-                                <a href="{{route('editUser',['token' => encrypt(1)])}}" data-toggle="tooltip" title="Edit Payment" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                                <a href="{{route('deleteUser',['token' => encrypt(1)])}}" data-toggle="tooltip" title="Delete User" onclick="return confirm('This Process cannot be undone and you can\'t re-use this email for another purpose on this site. Do you want to continue?');" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                            <td>
+                                <a href="{{route('payEdit',['token' => encrypt($p->id)])}}" data-toggle="tooltip" title="Edit Payment" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                            </td>
+                                <!--<a href="{{route('deleteUser',['token' => encrypt(1)])}}" data-toggle="tooltip" title="Delete User" onclick="return confirm('This Process cannot be undone and you can\'t re-use this email for another purpose on this site. Do you want to continue?');" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                             </td>-->
                         </tr>
                     @endforeach

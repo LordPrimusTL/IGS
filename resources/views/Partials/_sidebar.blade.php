@@ -16,7 +16,9 @@
                 <li class="{{Request::is('activity/student/view') ? "active" : " "}}"> <a href="{{route('viewStudent')}}"><i class="fa fa-user"></i>&nbsp;Students</a></li>
                 <li class="{{Request::is('activity/class/view') ? "active" : " "}}"> <a href="{{route('viewClass')}}"><i class="fa fa-dashboard"></i>&nbsp;Class</a></li>
                 <li class="{{Request::is('activity/payment/list') ? "active" : " "}}"> <a href="{{route('paymentList')}}"><i class="fa fa-credit-card"></i>&nbsp;List Of Payments</a></li>
-                <li class="{{Request::is('activity/payment/view') ? "active" : " "}}"> <a href="{{route('viewPayment')}}"><i class="fa fa-money"></i>&nbsp;Payments</a></li>
+                <li class="{{Request::is('activity/payment/view')? "active" : " "}}"> <a href="{{route('viewPayment')}}"><i class="fa fa-money"></i>&nbsp;Payments</a></li>
+                <li class="{{Request::is('activity/print/class') ? "active" : " "}}"> <a href="{{route('print_class')}}"><i class="fa fa-print"></i>&nbsp;Print By Class</a></li>
+                <li class="{{Request::is('activity/print/payment') ? "active" : " "}}"> <a href="{{route('print_payment')}}"><i class="fa fa-print"></i>&nbsp;Print By Payment</a></li>
         </ul>
     </nav>
 @endif

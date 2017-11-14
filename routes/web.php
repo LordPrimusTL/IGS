@@ -30,8 +30,8 @@ Route::get('/test',function ()
 });
 
 
-//Route::get('excel','ActivityController@ExcelTest')->name('excel');
-//Route::get('excel','ActivityController@ExcelTest')->name('excel');
+Route::get('excel','ActivityController@ExcelTest')->name('excel');
+//Route::get('excel','ActivityController@Excel')->name('excel');
 
 
 Route::group(['prefix' => '/activity/', 'middleware' => ['auth','AllAuth']], function ()
@@ -78,8 +78,17 @@ Route::group(['prefix' => '/activity/', 'middleware' => ['auth','AllAuth']], fun
     Route::get('payment/view/{col}/{val}','ActivityController@ViewPaymentCol')->name('viewPaymentID');
     Route::get('payment/view','ActivityController@ViewPayment')->name('viewPayment');
     Route::get('payment/action/{token}','ActivityController@PaymentAction')->name('payAction');
+    Route::get('payment/edit/{token}','ActivityController@PaymentEdit')->name('payEdit');
     Route::post('payment/save','ActivityController@PaymentSave')->name('savePayment');
     Route::post('payment/search','ActivityController@PaymentSearch')->name('searchPayment');
+
+
+    //Print
+    Route::get('print/class','ActivityController@PrintClass')->name('print_class');
+    Route::post('print/class','ActivityController@PrintClassPost')->name('print_class_post');
+
+    Route::get('print/payment','ActivityController@PrintPayment')->name('print_payment');
+    Route::post('print/payment','ActivityController@PrintPaymentPost')->name('print_payment_post');
 });
 
 

@@ -32,7 +32,7 @@
                                 <?php $stud = \App\SchoolSession::all();?>
                                 <option value="">Select Session</option>
                                 @foreach($stud as $s)
-                                    <option value="{{$s->id}}" {{$pay != null ? $pay->stud_id === $s->id ? 'selected' : '' : ''}}>{{$s->session}}</option>
+                                    <option value="{{$s->id}}" {{$pay != null ? $pay->sess_id == $s->id ? 'selected' : '' : ''}}>{{$s->session}}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -43,7 +43,7 @@
                                 <?php $stud = \App\Term::all();?>
                                 <option value="">Select Term</option>
                                 @foreach($stud as $s)
-                                    <option value="{{$s->id}}" {{$pay != null ? $pay->term_id === $s->id ? 'selected' : '' : ''}}>{{$s->term}}</option>
+                                    <option value="{{$s->id}}" {{$pay != null ? $pay->term_id == $s->id ? 'selected' : '' : ''}}>{{$s->term}}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -54,7 +54,7 @@
                                 <?php $stud = \App\SchoolClass::all();?>
                                 <option value="">Select Class</option>
                                 @foreach($stud as $s)
-                                    <option value="{{$s->id}}" {{$pay != null ? $pay->c_id === $s->id ? 'selected' : '' : ''}}>{{$s->class}}</option>
+                                    <option value="{{$s->id}}" {{$pay != null ? $pay->c_id == $s->id ? 'selected' : '' : ''}}>{{$s->class}}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -64,7 +64,7 @@
                                 <?php $stud = \App\PaymentList::all();?>
                                 <option value="">Select Payment: </option>
                                 @foreach($stud as $s)
-                                    <option value="{{$s->id}}" {{$pay != null ? $pay->pl_id === $s->id ? 'selected' : '' : ''}}>{{$s->name}}</option>
+                                    <option value="{{$s->id}}" {{$pay != null ? $pay->pl_id == $s->id ? 'selected' : '' : ''}}>{{$s->name}}</option>
                                 @endforeach
                             </select>
                         </div>

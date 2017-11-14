@@ -82,7 +82,7 @@ return array(
         |--------------------------------------------------------------------------
         */
         'pageSetup' => [
-            'orientation'           => 'portrait',
+            'orientation'           => 'landscape',
             'paperSize'             => '9',
             'scale'                 => '100',
             'fitToPage'             => true,
@@ -299,7 +299,7 @@ return array(
             |--------------------------------------------------------------------------
             | Supported: DomPDF, tcPDF, mPDF
             */
-            'driver'  => 'DomPDF',
+            'driver'  => 'domPDF',
 
             /*
             |--------------------------------------------------------------------------
@@ -323,7 +323,7 @@ return array(
                 |--------------------------------------------------------------------------
                 */
                 'tcPDF'  => [
-                    'path' => base_path('vendor/tecnick.com/tcpdf/')
+                    'path' => base_path('vendor/tecnickcom/tcpdf/')
                 ],
 
                 /*

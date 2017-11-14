@@ -248,7 +248,7 @@ class ActivityController extends Controller
     //Class
     public function ViewClass()
     {
-        return view('Activity.Class.view',['title' => 'Class', 'cls' => SchoolClass::all()]);
+        return view('Activity.Class.view',['title' => 'Class', 'cls' => SchoolClass::orderByDesc('type')->get()]);
     }
     public function ClassAction($token)
     {
@@ -363,8 +363,15 @@ class ActivityController extends Controller
     {
         if(decrypt($token) == 1)
         {
-            return view('Activity.Payment.Add',['title' => 'Add Payment', 'pay' =>  null,'type' => 1,'adm_id' => null]);
+            return view('Activity.Payment.Add',['title' => 'Add Payment', 'pay' =>  null,'type' => 1,'id' => null]);
         }
+    }
+
+    public function PaymentEdit(Request $request)
+    {
+        $p = Payment::find(decrypt($request->token));
+        return view('Activity.Payment.Add',['title' => 'Add Payment', 'pay' => $p ,'type' => 2,'id' => $p->stud->id]);
+       // dd($request->token, decrypt($request->token));
     }
     public function PaymentSave(Request $request)
     {
@@ -415,7 +422,15 @@ class ActivityController extends Controller
             $pay->save();
             Session::flash('success','Payment ' . $action . ' Successfully.');
             $this->getLogger()->LogInfo('Payment added successfuly',['pay' => $pay,'by' => Auth::id(),'oldPay' => $old_p]);
-            return redirect()->action('ActivityController@ViewPayment');
+            if($action == 'Saved')
+            {
+                return redirect()->action('ActivityController@ViewPayment');
+            }
+            else
+            {
+                return view('Activity.Payment.Payment',['title' => 'Payment', 'pay' => Payment::where('id', $pay->id)->get(),'key' => null, 's'=>null]);
+
+            }
 
         }
         catch (\Exception $ex)
@@ -428,7 +443,6 @@ class ActivityController extends Controller
 
 
     }
-
     public function PaymentSearch(Request $request)
     {
         //count = 3;
@@ -474,7 +488,7 @@ class ActivityController extends Controller
                 $p->where('amount','LIKE' ,'%' . $a[7] . '%');
             }
             //dd($p->get());
-            return view('Activity.Payment.Payment',['title' => 'Payment', 'pay' => $p->orderByDesc('created_at')->get(),'key' => $request->key, 's'=>null]);
+            return view('Activity.Payment.Payment',['title' => 'Search Payment', 'pay' => $p->orderByDesc('created_at')->get(),'key' => $request->key, 's'=>null]);
         }
         catch (\Exception $ex)
         {
@@ -486,138 +500,239 @@ class ActivityController extends Controller
     }
 
 
+    //Print By Class
+    public function PrintClass()
+    {
+        return view('Activity.Print.Class',['title' => 'Print By Class','t' => 1]);
+    }
 
+    public function PrintClassPost(Request $request)
+    {
+        $this->validate($request,[
+            'sess' => 'required',
+            'term' => 'required',
+            'class' => 'required',
+        ]);
+        $class = $request->class;//Class
+        $sess = $request->sess;//Session
+        $term = $request->term;//Term
+        $classname = SchoolClass::find($class)->class;
+        $sessname = SchoolSession::find($sess)->session;
+        $data = Payment::query();
+        $data->where(['c_id' =>  $class, 'sess_id' => $sess, 'term_id' => $term]);
+        $p = $data->orderBy('stud_id','ASC')->get();
+        //$ll = $data->where
+        $list = PaymentList::all();
+        $ids = []; $ex = [];
+        $i = 1;
+        //Get All Student Ids
+        $chk = false;
+        foreach ($p->all() as $d)
+        {
+            $chk = false;
+            foreach ($ids as $id)
+            {
+                if($d->stud_id == $id)
+                {
+                    $chk = true;
+                    break;
+                }
 
+            }
+            if($chk == false)
+            {
+                $ids[] = $d->stud_id;
+            }
 
+        }
+        $studData = [];
+        //Get All Student Data
+        $count = 1;
+        if(!empty($ids))
+        {
+            foreach($ids as $id)
+            {
+                $studPay = Payment::where(['c_id' =>  $class, 'sess_id' => $sess, 'term_id' => $term,'stud_id' => $id])->get();
+                $dd = ["FullName" =>Student::find($id)->fullname];
+                foreach ($studPay as $pp)
+                {
+                    $name = $pp->list->name;
+                    $dd[] = "$name: NGN $pp->amount";
+                }
+                $studData[] = $dd;
+            }
+            //dd($studData);
+
+        }
+        if(!empty($studData))
+        {
+            Excel::create("$classname$sessname", function($excel) use($studData, $classname, $sessname)
+            {
+                $excel->sheet("$classname", function($sheet) use($studData){
+                    $sheet->setOrientation('landscape');
+                    $sheet->getProtection()->setSheet(true);
+                    $sheet->fromArray($studData,null,'A1',false, false);
+                });
+            })->export('xlsx');
+        }
+        else{
+            Session::flash('warning','No Record');
+            return redirect()->back();
+        }
+    }
+
+    //Print By Payment
+    public function PrintPayment()
+    {
+        return view('Activity.Print.Class',['title' => 'Print By Class','t' => 2]);
+    }
+
+    public function PrintPaymentPost(Request $request)
+    {
+        $this->validate($request,[
+            'sess' => 'required',
+            'term' => 'required',
+            'list' => 'required',
+        ]);
+        $list = $request->list;//Payment List
+        $sess = $request->sess;//Session
+        $term = $request->term;//Term
+        $listname = PaymentList::find($list)->name;
+        $sessname = SchoolSession::find($sess)->session;
+        $data = Payment::query();
+        $data->where(['pl_id' =>  $list, 'sess_id' => $sess, 'term_id' => $term]);
+        $p = $data->orderBy('stud_id','ASC')->get();
+        //$ll = $data->where
+        $ids = [];
+        //Get All Student Ids
+        foreach ($p->all() as $d)
+        {
+            $chk = false;
+            foreach ($ids as $id)
+            {
+                if($d->stud_id == $id)
+                {
+                    $chk = true;
+                    break;
+                }
+
+            }
+            if($chk == false)
+            {
+                $ids[] = $d->stud_id;
+            }
+
+        }
+        $studData = [];
+        //Get All Student Data
+        $count = 1;
+        if(!empty($ids))
+        {
+            foreach($ids as $id)
+            {
+                $studPay = Payment::where(['pl_id' =>  $list, 'sess_id' => $sess, 'term_id' => $term,'stud_id' => $id])->get();
+                $dd = ["FullName" =>Student::find($id)->fullname];
+                foreach ($studPay as $pp)
+                {
+                    $dd[] = "$listname: NGN $pp->amount";
+                }
+                $studData[] = $dd;
+            }
+            //dd($studData);
+
+        }
+        //dd('stop');
+        if(!empty($studData))
+        {
+            Excel::create("$listname - $sessname", function($excel) use($studData, $listname, $sessname)
+            {
+                $excel->sheet("$listname", function($sheet) use($studData){
+                    $sheet->setOrientation('landscape');
+                    $sheet->getProtection()->setSheet(true);
+                    $sheet->fromArray($studData,null,'A1',false, false);
+                });
+            })->export('xlsx');
+        }
+        else{
+            Session::flash('warning','No Record');
+            return redirect()->back();
+        }
+        dd($request->all());
+    }
 
     //// Work oN this stuff
     public function ExcelTest()
     {
         //$n = new Excel();
-        $chk = false;
-        $class = 16;//Class
-        $sess = 2;//Session - First Part
+        $class = 16;//Class SSS Three
+        $sess = 3;//Session - First Part
         $term = 1;//Term - First
         $classname = SchoolClass::find($class)->class;
-        $sessname = SchoolSession::find(2)->session;
+        $sessname = SchoolSession::find($sess)->session;
         $data = Payment::query();
         $data->where(['c_id' =>  $class, 'sess_id' => $sess, 'term_id' => $term]);
-        $p = $data->orderBy('stud_id','DESC')->get();
+        $p = $data->orderBy('stud_id','ASC')->get();
         //$ll = $data->where
         $list = PaymentList::all();
         $ids = []; $ex = [];
         $i = 1;
-        //$exx = [1,2,3,4,5,6,7,8,9];
         //Get All Student Ids
+        $chk = false;
         foreach ($p->all() as $d)
         {
-            if(empty($ids))
+            $chk = false;
+            foreach ($ids as $id)
             {
-                array_push($ids,$d->stud_id);
-                //array_push($ex, $d->stud_id);
+                if($d->stud_id == $id)
+                {
+                    $chk = true;
+                    break;
+                }
+
             }
-            else{
-                foreach ($ids as $id)
-                {
-                    if($d->stud_id === $id)
-                    {
-                        $chk = true;
-                        break;
-                    }
-                }
-                if(!$chk)
-                {
-                    array_push($ids, $d->stud_id);
-                    //var_dump($ids);
-                }
+            if($chk == false)
+            {
+                $ids[] = $d->stud_id;
             }
 
         }
-        $ids = array_reverse($ids);
         $studData = [];
         //Get All Student Data
+        $count = 1;
         if(!empty($ids))
         {
-            //dd($ids);
             foreach($ids as $id)
             {
                 $studPay = Payment::where(['c_id' =>  $class, 'sess_id' => $sess, 'term_id' => $term,'stud_id' => $id])->get();
-                print_r($id);
-                //$studPay = $d->where('stud_id','=',$id)->get();
-                array_push($studData, [Student::find($id)->fullname => $studPay->toArray()]);
+                $dd = ["FullName" =>Student::find($id)->fullname];
+                foreach ($studPay as $pp)
+                {
+                    $name = $pp->list->name;
+                    $dd[] = "$name: NGN $pp->amount";
+                }
+                $studData[] = $dd;
             }
             //dd($studData);
 
         }
-       // for($i = 0; $i < count($ids);$i++)
-
-        //dd("stop");
-
-        Excel::create("$classname - $sessname", function($excel)
-        {
-            $excel->setTitle('Dat Dat Data');
-            $excel->sheet('Users', function($sheet) {
-                $arr = [];
-                foreach (User::all() as $us)
-                {
-                    if($us != null)
-                    {
-                        $a = ['ID' => $us->id, 'Email' => $us->email, 'Password' => $us->password, 'Role' => $us->role->role ,'Access' => $us->access];
-                        array_push($arr, $a);
-                    }
-                }
-                $sheet->setTitle('My Excel File')->setStyle(['font' => ['name' => 'Andale Mono']]);
-                //dd($arr);
-                $sheet->fromArray($arr);
-                /*$sheet->fromArray(array(
-                    array('data1', 'data2'),
-                    array('data3', 'data4')
-                ));*/
-            });
-        })->export('xlsx');
+       if(!empty($studData))
+       {
+           Excel::create("$classname - $sessname", function($excel) use($studData, $classname, $sessname)
+           {
+               $excel->sheet("$classname", function($sheet) use($studData){
+                   $sheet->setOrientation('landscape');
+                   $sheet->getProtection()->setSheet(true);
+                   $sheet->fromArray($studData,null,'A1',false, false);
+               });
+           })->export('xlsx');
+       }
+       else{
+            Session::flash('warning','No Record');
+            return redirect()->back();
+       }
         //->download('xls')
     }
 
-
-    public function Excel()
-    {
-       try{
-           //Creating Excel
-
-           $excel=new ExcelGenerator("myXls.xls");
-
-           if($excel==false)
-               echo $excel->error;
-
-           $myArr=array("Name","Last Name","Address","Age");
-           $excel->writeLine($myArr);
-
-           $myArr=array("Sriram","Pandit","23 mayur vihar",24);
-           $excel->writeLine($myArr);
-
-           $excel->writeRow();
-           $excel->writeCol("Manoj");
-           $excel->writeCol("Tiwari");
-           $excel->writeCol("80 Preet Vihar");
-           $excel->writeCol(24);
-
-           $excel->writeRow();
-           $excel->writeCol("Harish");
-           $excel->writeCol("Chauhan");
-           $excel->writeCol("115 Shyam Park Main");
-           $excel->writeCol(22);
-
-           $myArr=array("Tapan","Chauhan","1st Floor Vasundhra",25);
-           $excel->writeLine($myArr);
-
-           $excel->close();
-           echo "data is write into myXls.xls Successfully.";
-       }
-       catch (\Exception $ex)
-       {
-           dd($ex);
-       }
-    }
 
     public function ddJson(Request $request)
     {
@@ -745,5 +860,12 @@ class ActivityController extends Controller
         }
         //Excel::load(file_get_contents(storage_path('file.xls')), function ($reader){})->dd();
         //dd($file);
+    }
+
+    function myDump($data)
+    {
+        echo '<pre>';
+        var_dump($data);
+        echo '</pre>';
     }
 }

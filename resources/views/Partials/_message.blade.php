@@ -11,6 +11,12 @@
         <strong style="margin-left: 10px;"><i class="fa fa-close"></i>  Error:</strong> {{Session::get('error')}}
     </div>
 @endif
+@if(Session::has('warning'))
+    <div class="alert alert-dismissible alert-warning" style="margin-left: 10px;">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong style="margin-left: 10px;"><i class="fa fa-warning"></i>  Error:</strong> {{Session::get('warning')}}
+    </div>
+@endif
 
 @if (count($errors) > 0)
     <div class="alert alert-danger" style="margin-left: 10px;">
