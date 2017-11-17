@@ -58,4 +58,16 @@ class AuthCheck
         return false;
 
     }
+
+    public static function passwordChange()
+    {
+        if(Auth::user()->password_change)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

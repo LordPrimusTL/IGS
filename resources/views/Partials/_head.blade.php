@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{asset('css/style.default.css')}}" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
-    <script src="{{asset('js/admin/jquery-2.1.4.min.js')}}"></script>
+    <script src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
     <script>$(document).ready(function () {
             $('[data-toggle = "tooltip"]').tooltip();
         })</script>

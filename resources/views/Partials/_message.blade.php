@@ -14,7 +14,7 @@
 @if(Session::has('warning'))
     <div class="alert alert-dismissible alert-warning" style="margin-left: 10px;">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong style="margin-left: 10px;"><i class="fa fa-warning"></i>  Error:</strong> {{Session::get('warning')}}
+        <strong style="margin-left: 10px;"><i class="fa fa-warning"></i>  Warning:</strong> {{Session::get('warning')}}
     </div>
 @endif
 

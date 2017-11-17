@@ -1,4 +1,28 @@
-
+-- New DB November 17, 2017
+ALTER TABLE `users` ADD `password_change` TINYINT NOT NULL DEFAULT '0' AFTER `access`;
+INSERT INTO `payment_lists` (`id`, `name`, `deleted_at`, `created_at`, `updated_at`) VALUES
+  (1, 'Tuition', NULL, '2017-11-10 12:52:35', '2017-11-10 12:52:35'),
+  (2, 'Boarding', NULL, '2017-11-10 12:52:41', '2017-11-10 12:52:41'),
+  (3, 'JSS3 Examination', NULL, '2017-11-10 12:52:53', '2017-11-10 12:52:53'),
+  (4, 'SSS3 Examination', NULL, '2017-11-10 12:53:05', '2017-11-10 12:53:05'),
+  (5, 'Lesson', NULL, '2017-11-10 12:53:11', '2017-11-10 12:53:11'),
+  (6, 'JAMB Lesson', NULL, '2017-11-10 12:53:32', '2017-11-10 12:53:32'),
+  (7, 'Identity Card', NULL, '2017-11-10 12:54:05', '2017-11-10 12:54:05'),
+  (8, 'School Uniform', NULL, '2017-11-10 12:54:10', '2017-11-10 12:54:10'),
+  (9, 'Computer Science', NULL, '2017-11-10 12:54:20', '2017-11-10 12:54:20'),
+  (10, 'Home Economics/Technical Drawing', NULL, '2017-11-10 12:54:34', '2017-11-10 12:54:34'),
+  (11, 'Hostel House Wear', NULL, '2017-11-10 12:54:45', '2017-11-10 12:54:45'),
+  (12, 'Games', NULL, '2017-11-10 12:55:20', '2017-11-10 12:55:20'),
+  (13, 'Sports', NULL, '2017-11-10 12:55:24', '2017-11-10 12:55:24'),
+  (14, 'Medical', NULL, '2017-11-10 12:55:30', '2017-11-10 12:55:30'),
+  (15, 'PTA Levy', NULL, '2017-11-10 12:55:40', '2017-11-10 12:55:40'),
+  (16, 'Transport', NULL, '2017-11-10 12:55:42', '2017-11-10 12:55:42'),
+  (17, 'Certificate & Result', NULL, '2017-11-10 12:55:52', '2017-11-10 12:55:52'),
+  (18, 'Last Term Debt', NULL, '2017-11-16 04:42:01', '2017-11-16 04:42:01'),
+  (19, 'Next Term School Fee', NULL, '2017-11-16 04:42:22', '2017-11-16 04:42:22'),
+  (20, 'Next Term Hostel Fee', NULL, '2017-11-16 04:43:33', '2017-11-16 04:43:33'),
+  (21, 'Extra Uniform', NULL, '2017-11-16 04:44:30', '2017-11-16 04:44:30'),
+  (22, 'Hostel', NULL, '2017-11-16 04:47:11', '2017-11-16 04:47:11');
 #November 10 update
 TRUNCATE TABLE `students`;
 ALTER TABLE `students` ADD `parent_phone_number` VARCHAR(50) NULL AFTER `dob`;
@@ -1272,3 +1296,6 @@ INSERT INTO `payments` (`id`, `p_id`, `stud_id`, `sess_id`, `term_id`, `c_id`, `
 (151, 'xeMW7s6amGXZY23Br0gQ', '1014', 3, 1, 16, 1, 10000.00, '25/10/2017', NULL, '2017-11-13 06:48:56', '2017-11-13 06:48:56'),
 (152, 'QqiFdvrjsj3uoWDypBMJ', '986', 3, 1, 17, 1, 10000.00, '25/10/2017', NULL, '2017-11-13 06:51:12', '2017-11-13 06:51:12'),
 (153, 'BzcxOGABrpqCq784SNQj', '541', 3, 1, 11, 8, 1800.00, '25/10/2017', NULL, '2017-11-13 06:53:38', '2017-11-13 06:53:38');
+
+
+

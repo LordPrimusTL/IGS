@@ -4,6 +4,7 @@ namespace App\Http;
 
 use App\Http\Middleware\AdminAuth;
 use App\Http\Middleware\AllAuth;
+use App\Http\Middleware\changePassword;
 use App\Http\Middleware\GuestAuth;
 use App\Http\Middleware\StaffAuth;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
@@ -65,5 +66,6 @@ class Kernel extends HttpKernel
         'AdminAuth' => AdminAuth::class,
         'StaffAuth' => StaffAuth::class,
         'GuestAuth' => GuestAuth::class,
+        'changePassword' => changePassword::class,
     ];
 }

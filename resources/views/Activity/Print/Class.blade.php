@@ -11,7 +11,7 @@
             </div>
             <div class="col-12">
                 <div class="col-1"></div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-12 col-sm-12">
                     <br>
                     @if($t == 1)
                         <form method="POST" action="{{route('print_class_post')}}">

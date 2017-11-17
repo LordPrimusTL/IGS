@@ -27,6 +27,36 @@ class ActivityController extends Controller
         return new Logger();
     }
 
+    public function changePassword()
+    {
+        return view('Activity.Password.Change',['title' => 'Change Password']);
+    }
+
+    public function changePasswordPost(Request $request)
+    {
+        $this->validate($request,[
+            'old_pass' => 'required','new_pass' => 'required','conf_new_pass' => 'same:new_pass'
+        ],['old_pass.required' => "Old Password Is Required", 'new_pass.required' => "New Password Is Required",'conf_new_pass.same'=>'New Password And Confirm Password Mismatch']);
+
+        if(Hash::check($request->old_pass, Auth::user()->password))
+        {
+            $user = User::find(Auth::id());
+            $user->password = Hash::make($request->new_pass);
+            $user->password_change = true;
+            if($user->save())
+            {
+                Session::flash('success','Password Changed Successfully');
+            }
+            else{
+                Log::error('Mavericks Error');
+                Session::flash('error','Unable to change password at this moment');
+            }
+        }
+        else{
+            Session::flash('error','Current Password is Incorrect');
+        }
+        return redirect()->back();
+    }
 
     //User
     public function ViewUsers()
@@ -522,10 +552,14 @@ class ActivityController extends Controller
         $data->where(['c_id' =>  $class, 'sess_id' => $sess, 'term_id' => $term]);
         $p = $data->orderBy('stud_id','ASC')->get();
         //$ll = $data->where
-        $list = PaymentList::all();
-        $ids = []; $ex = [];
+        $ids = [];
         $i = 1;
+        $ap = [0,0,1,8,22,16,21,18,19,4,6,3];
+        $apN = ["S/N","Name","Tuition","School Uniform","Hostel Fee","Trans.","Extra Uniform","Last Term Debt","Next Term Tuition",
+            "SSS3 Exam. Fees","Jamb Lesson","JSS3 Exam. Fees","Others(Specify)","Total"];
         //Get All Student Ids
+        //dd($ap, $apN);
+        $list = [$apN];
         $chk = false;
         foreach ($p->all() as $d)
         {
@@ -548,30 +582,67 @@ class ActivityController extends Controller
         $studData = [];
         //Get All Student Data
         $count = 1;
+        $dd=[];
         if(!empty($ids))
         {
+            $sn = 1;
             foreach($ids as $id)
             {
                 $studPay = Payment::where(['c_id' =>  $class, 'sess_id' => $sess, 'term_id' => $term,'stud_id' => $id])->get();
-                $dd = ["FullName" =>Student::find($id)->fullname];
+                //$this->myDump([$id => $studPay->toArray()]);
+                $total = 0;
+                $dd = array();
                 foreach ($studPay as $pp)
                 {
-                    $name = $pp->list->name;
-                    $dd[] = "$name: NGN $pp->amount";
+                    //$this->myDump($pp);
+                    $chkk = false;
+                    for($i = 2; $i < count($ap); $i++)
+                    {
+                        $chkk = false;
+                        if($pp->pl_id == $ap[$i])
+                        {
+                            $chkk = true;
+                            $dd[$i] = !empty($dd[$i]) ? "$dd[$i],$pp->amount" : $pp->amount;
+                            $total += $pp->amount;
+                            break;
+                            //dd( $pp->pl_id, $ap[$i], $i);
+                        }
+                    }
+                    if(!$chkk)
+                    {
+                        $name = $pp->list->name;
+                        $dd[count($ap)] = $dd[count($ap)] . ",$name: NGN $pp->amount";
+                        $total += $pp->amount;
+                    }
+
                 }
-                $studData[] = $dd;
+                $dd[0] = $sn++;
+                $dd[1] = $pp->stud->fullname;
+                $dd[count($ap) + 1] = $total;
+                for($i = 0; $i < max(array_keys($dd)) + 1; $i++)
+                {
+                    if(!isset($dd[$i]))
+                    {
+                        $dd[$i] = null;
+                    }
+                }
+                ksort($dd);
+                $list[] =$dd;
+                //dd(ksort($dd),$dd,$list, count($dd), max(array_keys($dd)));
+
             }
-            //dd($studData);
+            //dd($dd);
 
         }
-        if(!empty($studData))
+        //dd("Stop");
+        if(!empty($list))
         {
-            Excel::create("$classname$sessname", function($excel) use($studData, $classname, $sessname)
+            Excel::create("$classname - $sessname", function($excel) use($studData, $classname, $sessname, $list)
             {
-                $excel->sheet("$classname", function($sheet) use($studData){
+                $excel->sheet("$classname", function($sheet) use($list){
                     $sheet->setOrientation('landscape');
                     $sheet->getProtection()->setSheet(true);
-                    $sheet->fromArray($studData,null,'A1',false, false);
+                    $sheet->fromArray($list,null,'A1',false, false);
                 });
             })->export('xlsx');
         }
@@ -584,7 +655,7 @@ class ActivityController extends Controller
     //Print By Payment
     public function PrintPayment()
     {
-        return view('Activity.Print.Class',['title' => 'Print By Class','t' => 2]);
+        return view('Activity.Print.Class',['title' => 'Print By Payment','t' => 2]);
     }
 
     public function PrintPaymentPost(Request $request)
@@ -628,16 +699,34 @@ class ActivityController extends Controller
         $count = 1;
         if(!empty($ids))
         {
+            $header = ['S/N', 'Name', 'Class','Payments'];
+            $studData[] = $header;
+            $total = 0;
+            $i = 1;
             foreach($ids as $id)
             {
                 $studPay = Payment::where(['pl_id' =>  $list, 'sess_id' => $sess, 'term_id' => $term,'stud_id' => $id])->get();
-                $dd = ["FullName" =>Student::find($id)->fullname];
+                $name = Student::find($id)->fullname;
+                $dd = array();
+                $dd[] = $i++;
+                $dd[] = $name;
                 foreach ($studPay as $pp)
                 {
-                    $dd[] = "$listname: NGN $pp->amount";
+                    if(isset($dd[3]))
+                    {
+                        $dd[3] = $dd[3].", $pp->amount";
+                    }
+                    else{
+                        $dd[] = $pp->class->class;
+                        $dd[] = "$listname: NGN $pp->amount";
+                    }
+                    $total += $pp->amount;
                 }
+                //$this->myDump($dd);
                 $studData[] = $dd;
             }
+            $count = count($ids);
+            $studData[] = ['Total',"$count Students", "NGN $total"];
             //dd($studData);
 
         }
@@ -673,10 +762,14 @@ class ActivityController extends Controller
         $data->where(['c_id' =>  $class, 'sess_id' => $sess, 'term_id' => $term]);
         $p = $data->orderBy('stud_id','ASC')->get();
         //$ll = $data->where
-        $list = PaymentList::all();
-        $ids = []; $ex = [];
+        $ids = [];
         $i = 1;
+        $ap = [0,0,1,8,22,16,21,18,19,4,6,3];
+        $apN = ["S/N","Name","Tuition","School Uniform","Hostel Fee","Trans.","Extra Uniform","Last Term Debt","Next Term Tuition",
+            "SSS3 Exam. Fees","Jamb Lesson","JSS3 Exam. Fees","Others(Specify)","Total"];
         //Get All Student Ids
+        //dd($ap, $apN);
+        $list = [$apN];
         $chk = false;
         foreach ($p->all() as $d)
         {
@@ -699,30 +792,67 @@ class ActivityController extends Controller
         $studData = [];
         //Get All Student Data
         $count = 1;
+        $dd=[];
         if(!empty($ids))
         {
+            $sn = 1;
             foreach($ids as $id)
             {
                 $studPay = Payment::where(['c_id' =>  $class, 'sess_id' => $sess, 'term_id' => $term,'stud_id' => $id])->get();
-                $dd = ["FullName" =>Student::find($id)->fullname];
+                $this->myDump([$id => $studPay->toArray()]);
+                $total = 0;
+                $dd = array();
                 foreach ($studPay as $pp)
                 {
-                    $name = $pp->list->name;
-                    $dd[] = "$name: NGN $pp->amount";
+                    //$this->myDump($pp);
+                    $chkk = false;
+                    for($i = 2; $i < count($ap); $i++)
+                    {
+                        $chkk = false;
+                        if($pp->pl_id == $ap[$i])
+                        {
+                            $chkk = true;
+                            $dd[$i] = !empty($dd[$i]) ? "$dd[$i],$pp->amount" : $pp->amount;
+                            $total += $pp->amount;
+                            break;
+                            //dd( $pp->pl_id, $ap[$i], $i);
+                        }
+                    }
+                    if(!$chkk)
+                    {
+                        $name = $pp->list->name;
+                        $dd[count($ap)] = $dd[count($ap)] . ",$name: NGN $pp->amount";
+                        $total += $pp->amount;
+                    }
+
                 }
-                $studData[] = $dd;
+                $dd[0] = $sn++;
+                $dd[1] = $pp->stud->fullname;
+                $dd[count($ap) + 1] = $total;
+                for($i = 0; $i < max(array_keys($dd)) + 1; $i++)
+                {
+                    if(!isset($dd[$i]))
+                    {
+                        $dd[$i] = null;
+                    }
+                }
+                ksort($dd);
+                $list[] =$dd;
+                //dd(ksort($dd),$dd,$list, count($dd), max(array_keys($dd)));
+
             }
-            //dd($studData);
+            //dd($dd);
 
         }
-       if(!empty($studData))
+        //dd("Stop");
+       if(!empty($list))
        {
-           Excel::create("$classname - $sessname", function($excel) use($studData, $classname, $sessname)
+           Excel::create("$classname - $sessname", function($excel) use($studData, $classname, $sessname, $list)
            {
-               $excel->sheet("$classname", function($sheet) use($studData){
+               $excel->sheet("$classname", function($sheet) use($list){
                    $sheet->setOrientation('landscape');
                    $sheet->getProtection()->setSheet(true);
-                   $sheet->fromArray($studData,null,'A1',false, false);
+                   $sheet->fromArray($list,null,'A1',false, false);
                });
            })->export('xlsx');
        }

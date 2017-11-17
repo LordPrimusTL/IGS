@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use App\Helpers\AuthCheck;
 use Closure;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
 class AllAuth

@@ -34,7 +34,14 @@ Route::get('excel','ActivityController@ExcelTest')->name('excel');
 //Route::get('excel','ActivityController@Excel')->name('excel');
 
 
-Route::group(['prefix' => '/activity/', 'middleware' => ['auth','AllAuth']], function ()
+Route::group(['prefix' => '/activity/','middleware' => ['auth','AllAuth']], function ()
+{
+    //Change Password
+    Route::get('password/change','ActivityController@changePassword')->name('passwordChange');
+    Route::post('password/change','ActivityController@changePasswordPost')->name('passwordChangePost');
+});
+
+Route::group(['prefix' => '/activity/', 'middleware' => ['auth','AllAuth','changePassword']], function ()
 {
    Route::group(['middleware' => ['AdminAuth']],function ()
    {
