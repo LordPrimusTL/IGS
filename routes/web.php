@@ -18,10 +18,31 @@ Route::post('/login','AccountController@LoginPost')->name('loginPost');
 
 Route::get('/clear', function()
 {
-    Artisan::call('cache:clear');
-    Artisan::call('config:cache');
+
     phpinfo();
     dd("Cleared!");
+});
+
+
+Route::group(['prefix' => '/artisan/'], function (){
+    Route::get('up', function (){
+        Artisan::call('up');
+        dd("Cleared!");
+
+    });
+    Route::get('down', function (){
+        Artisan::call('down');
+        dd("Cleared!");
+
+    });
+    Route::get('clear', function (){
+        Artisan::call('cache:clear');
+        Artisan::call('config:cache');
+        dd("Cleared!");
+
+    });
+
+
 });
 //Route::post('/api/test','ActivityController@ddJson');
 Route::get('/test',function ()

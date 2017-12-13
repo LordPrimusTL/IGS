@@ -208,15 +208,16 @@ class ActivityController extends Controller
     }
     public function saveStudent(Request $request)
     {
+        $this->validate($request,[
+            'adm_id' => 'required',
+            'fullname' => 'required',
+            'dob' => 'required',
+        ],['adm_id.required' => 'Admission ID Field Is Required']);
         try{
-            $this->validate($request,[
-                'adm_id' => 'required',
-                'fullname' => 'required',
-                'dob' => 'required',
-            ],['adm_id.required' => 'Admission ID Field Is Required']);
+
             $dob = null;
             try{
-                $dob = Carbon::parse($request->dob);
+                $dob = Carbon::createFromFormat('d/m/Y',$request->dob);
                 //dd($dob->toDateString());
             }
             catch(\Exception $ex)
@@ -554,8 +555,8 @@ class ActivityController extends Controller
         //$ll = $data->where
         $ids = [];
         $i = 1;
-        $ap = [0,0,1,8,22,16,21,18,19,4,6,3];
-        $apN = ["S/N","Name","Tuition","School Uniform","Hostel Fee","Trans.","Extra Uniform","Last Term Debt","Next Term Tuition",
+        $ap = [0,0,1,22,16,21,18,19,4,6,3];
+        $apN = ["S/N","Name","Tuition","Hostel Fee","Trans.","Extra Uniform","Last Term Debt","Next Term Tuition",
             "SSS3 Exam. Fees","Jamb Lesson","JSS3 Exam. Fees","Others(Specify)","Total"];
         //Get All Student Ids
         //dd($ap, $apN);
@@ -611,7 +612,8 @@ class ActivityController extends Controller
                     if(!$chkk)
                     {
                         $name = $pp->list->name;
-                        $dd[count($ap)] = $dd[count($ap)] . ",$name: NGN $pp->amount";
+                        //dd($dd, $name, $pp);
+                        $dd[count($ap)] = !isset($dd[count($ap)]) ? "$name: NGN $pp->amount ": $dd[count($ap)] . ",$name: NGN $pp->amount";
                         $total += $pp->amount;
                     }
 
