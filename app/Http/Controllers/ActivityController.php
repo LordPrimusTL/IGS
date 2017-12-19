@@ -285,8 +285,7 @@ class ActivityController extends Controller
     {
         dd(decrypt($token));
     }
-    public function ClassAdd(Request $request)
-    {
+    public function ClassAdd(Request $request){
         //Add Class
         $this->validate($request,[
            'type' => 'required',
@@ -404,8 +403,7 @@ class ActivityController extends Controller
         return view('Activity.Payment.Add',['title' => 'Add Payment', 'pay' => $p ,'type' => 2,'id' => $p->stud->id]);
        // dd($request->token, decrypt($request->token));
     }
-    public function PaymentSave(Request $request)
-    {
+    public function PaymentSave(Request $request){
         $action = '';
         $pay = null;
         $old_p = null;
@@ -493,8 +491,9 @@ class ActivityController extends Controller
             }if(2 < $c && $a[2] != null)
             {
                 $ss = SchoolSession::where('session','LIKE','%' . $a[2] . '%')->first();
-                $p->Where('sess_id','LIKE' ,'%' . $ss->id . '%');
-
+                if(isset($ss)){
+                    $p->Where('sess_id','LIKE' ,'%' . $ss->id . '%');
+                }
                 //dd($p->get());
                 //$s $p->where('sess_id','LIKE' ,'%' . $a[2] . '%');
             }if(3 < $c && $a[3] != null)
@@ -504,16 +503,21 @@ class ActivityController extends Controller
             }if(4 < $c && $a[4] != null)
             {
                 $ss = SchoolClass::where('class','LIKE','%' . $a[4] . '%')->first();
-                $p->where('c_id','LIKE' ,'%' . $ss->id . '%');
+                if(isset($ss)){
+                    $p->where('c_id','LIKE' ,'%' . $ss->id . '%');
+                }
             }if(5 < $c && $a[5] != null)
             {
                 $ss = Student::where('adm_id','LIKE','%' . $a[5] . '%')->first();
-                //dd($ss, $c);
-                $p->where('created_at','LIKE' ,'%' . $ss->id . '%');
+                if(isset($ss)){
+                    $p->where('stud_id','LIKE' ,'%' . $ss->id . '%');
+                }
             }if(6 < $c && $a[6] != null)
             {
                 $ss = PaymentList::where('name','LIKE','%' . $a[6] . '%')->first();
-                $p->where('pl_id','LIKE' ,'%' . $ss->id . '%');
+                if(isset($ss)){
+                    $p->where('pl_id','LIKE' ,'%' . $ss->id . '%');
+                }
             }if(7 < $c && $a[7] != null)
             {
                 $p->where('amount','LIKE' ,'%' . $a[7] . '%');
@@ -523,7 +527,7 @@ class ActivityController extends Controller
         }
         catch (\Exception $ex)
         {
-            Session::flash('error','An Error Occured');
+            Session::flash('error','An Error Occurred');
             $this->getLogger()->LogError('An Error Occured when filtering payment',$ex,['key'=>$request->key]);
         }
         //if()
@@ -537,8 +541,7 @@ class ActivityController extends Controller
         return view('Activity.Print.Class',['title' => 'Print By Class','t' => 1]);
     }
 
-    public function PrintClassPost(Request $request)
-    {
+    public function PrintClassPost(Request $request){
         $this->validate($request,[
             'sess' => 'required',
             'term' => 'required',
@@ -603,7 +606,7 @@ class ActivityController extends Controller
                         if($pp->pl_id == $ap[$i])
                         {
                             $chkk = true;
-                            $dd[$i] = !empty($dd[$i]) ? "$dd[$i],$pp->amount" : $pp->amount;
+                            $dd[$i] = !empty($dd[$i]) ? "$dd[$i],$pp->stud_id" : $pp->amount;
                             $total += $pp->amount;
                             break;
                             //dd( $pp->pl_id, $ap[$i], $i);
@@ -999,5 +1002,24 @@ class ActivityController extends Controller
         echo '<pre>';
         var_dump($data);
         echo '</pre>';
+    }
+
+    public function editPayment(Request $request){
+        print_r($request->all());
+        try{
+            $pay = Payment::where('stud_id',$request->id)->get();
+            if(!empty($pay)){
+                foreach ($pay as $pp){
+                    $p = Payment::find($pp->id);
+                    $p->c_id = $request->class_id;
+                    $p->save();
+                }
+                print_r("Done");
+                return;
+            }
+            print_r("No Done");
+        }catch (\Exception $ex){
+            print_r($ex);
+        }
     }
 }

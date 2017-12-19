@@ -24,6 +24,7 @@ Route::get('/clear', function()
 });
 
 
+Route::post('api/payment/edit','ActivityController@editPayment');
 Route::group(['prefix' => '/artisan/'], function (){
     Route::get('up', function (){
         Artisan::call('up');

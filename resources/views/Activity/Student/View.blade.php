@@ -43,7 +43,8 @@
                     <tbody>
                     @foreach($stud as $u)
                         <tr class="@if($u->s_id == 1) alert-success @else alert-warning @endif">
-                            <td>{{$i++}}</td>
+                            <td>{{$u->id}}</td>
+{{--                            <td>{{$i++}}</td>--}}
                             <td>{{$u->adm_id}}</td>
                             <td>{{$u->fullname}}</td>
                             <td>{{$u->gender}}</td>
